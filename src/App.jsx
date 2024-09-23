@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Guide } from './components/guide'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <h1>telefonoaudiolibro.es</h1>
+      <Guide txtSide={'left'} srcImg={'public/img/step1.png'} nameImg={'Paso1'} txtTittle={'¡Descuento!'} txtL1={'Este es el paso 1'}  />
+      <Guide txtSide={'left'} srcImg={'public/img/step1.png'} nameImg={'Paso1'} txtTittle={'¡Descuento!'} txtL1={'Este es el paso 1'} txtL3={'Este es el paso 3'}  />
     </>
   )
 }
