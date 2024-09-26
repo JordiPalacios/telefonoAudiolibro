@@ -1,16 +1,19 @@
 import React from 'react'
 
-export const Guide = ({txtSide, srcImg, nameImg, txtL1, txtL2, txtL3, txtTittle}) => {
-    const isLeftSide = txtSide === 'left'
+export const Guide = ({ stepsInfo }) => {
     return (
-        <div style={{display: 'flex', flexDirection: isLeftSide ? 'row' : 'row-reverse', alignItems:'center'}}>
-            <img src={srcImg} alt={nameImg}/>
-            <div style={{flexDirection:'column'}}>                
-                <h3>{txtTittle}</h3>
-                <p>{txtL1}</p>
-                <p>{txtL2}</p>
-                <p>{txtL3}</p>
-            </div>
+        <div>
+            {stepsInfo.map((step, index) => {
+                return (
+                    <div key={step.id} style={{ display: 'flex', flexDirection: step.txtLeft ? 'row' : 'row-reverse', alignItems: 'center', marginBottom: '20px' }} >
+                        <img src={step.imgSrc} alt={step.imgName} />
+                        <div>
+                            <h2>{step.tittle}</h2>
+                            <p style={{}}>{step.description}</p>
+                        </div>
+                    </div>
+                )
+            })}
         </div>
     )
 }
