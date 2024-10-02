@@ -1,7 +1,10 @@
 import React from 'react'
+import { NavbarMenu } from './navbarMenu'
 
 export const Header = () => {
-  return (
-    <div>header</div>
-  )
+    return (
+        <header>
+            <NavbarMenu />
+        </header>
+    )
 }
