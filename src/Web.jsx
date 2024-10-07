@@ -1,11 +1,15 @@
-import { Header } from "./components"
+import { Header, NavbarMenu, Section } from "./components/index"
 
 
 function Web() {
 
   return (
     <>
+      <NavbarMenu />
       <Header />   
+      <Section>
+
+      </Section>
     </>
   )
 }
