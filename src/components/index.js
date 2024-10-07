@@ -1,3 +1,5 @@
-export { Header } from './header'
-export { NavbarMenu } from './navbarMenu'
-export { NavItems } from './navItems'
+export { Header } from "./Header"
+export { NavbarMenu } from "./NavbarMenu";
+export { NavItems } from "./NavItems";
+export { Button } from "./Button";
+export { SectionContaier } from "./SectionContaier";
