@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const SectionContaier = () => {
+export const SectionContaier = ({children}) => {
     return (
         <section>
             {children}
