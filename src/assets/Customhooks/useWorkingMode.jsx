@@ -7,11 +7,11 @@ export const useWorkingMode = () => {
         
         const checkWorkingMode = () => {
         if (window.innerWidth > 1023) {
-            setWorkingMode('PC')
+            setWorkingMode('pc')
         } else if ( window.innerWidth > 759) {
-            setWorkingMode('Tablet')
+            setWorkingMode('tablet')
         } else {
-            setWorkingMode('Mobile')
+            setWorkingMode('mobile')
         }
         }
     
