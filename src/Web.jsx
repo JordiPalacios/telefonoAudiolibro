@@ -31,7 +31,7 @@ function Web() {
       </SectionContaier>
       <h1>Definir el método de pago, buscar información</h1>
       <h1>Definir en el footer si tendremos como en visualshow un apartado de contacto con formulario</h1>
-      <h1>Definir en el footer el apartado legal y el link a mi web</h1>
+      <h1 className="text-red-700 underline">Definir en el footer el apartado legal y el link a mi web</h1>
     </>
   )
 }
