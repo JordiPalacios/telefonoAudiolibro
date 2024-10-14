@@ -1,5 +1,5 @@
 import { useWorkingMode } from "./assets/Customhooks/useWorkingMode"
-import { Header, Instrucciones, NavbarMenu, QA, SectionContaier } from "./components/index"
+import { Header, Instrucciones, Layout, NavbarMenu, QA, SectionContaier } from "./components/index"
 
 
 function Web() {
