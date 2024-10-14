@@ -7,3 +7,4 @@ export { Desplegable } from "./Desplegable";
 export { QA } from "./QA";
 export { Instrucciones } from "./Instrucciones";
 export { BackgroundImage } from "./BackgroundImage";
+export { Layout } from "./Layout";
