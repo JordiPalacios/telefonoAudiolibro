@@ -1,0 +1,126 @@
+footer h3 {
+    font-family: var(--tittle-font);
+    margin: 0;
+}
+
+footer img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    max-width: fit-content;
+    animation-timeline: none;
+    animation-name: none;
+}
+
+footer button {
+    background: none;
+    font-size: .75rem;
+    color: var(--textWhite);
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+}
+
+footer a {
+    color: var(--secondary);
+    margin: 10px 0;
+    transition: color .5s ease-in-out;
+}
+
+footer .line {
+    border-top: 1px solid var(--secondary);
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rrssContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.rrssContainer a {
+    margin: 0;
+    transition: transform .5s ease-in-out;
+}
+
+.rrssContainer img {
+    aspect-ratio: 4/3;
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 1px var(--accent));
+}
+
+.normativeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Medidad Tablet */
+@media ( 760px <= width ) {
+
+    footer button {
+        font-size: .9rem;
+    }
+
+    .normativeContainer {
+        display: initial;
+    }
+
+    .rrssContainer img {
+        width: 70%;
+    }
+}
+
+/* Medidas PC  */
+@media ( 1024px <= width ) {
+
+    footer img {
+        margin-bottom: 10px;
+    }
+
+    footer a:hover {
+        color: var(--textWhite);
+    }
+
+    .footerDescriptionContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+    }
+
+    .rrssMainContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .normativeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rrssContainer a:hover {
+        transform: scale(1.25);
+    }
+}
+
+@media ( 2000px <= width ) {
+
+    footer button {
+        font-size: 1.2rem;
+    }
+}

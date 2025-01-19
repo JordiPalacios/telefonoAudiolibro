@@ -1,0 +1,371 @@
+/* * Navigation */
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    background: transparent;
+    font-size: 1.05rem;
+    text-align: start;
+    text-wrap: balance;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    opacity: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.productosOpen,
+.productosClose,
+.bodasEventosOpen,
+.bodasEventosClose {
+    font-size: 1rem;
+}
+
+nav b {
+    cursor: pointer;
+}
+
+nav button{
+    width: fit-content;
+    height: fit-content;
+    background-color: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.triangulo-abajo, 
+.triangulo-arriba {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+.triangulo-abajo {
+    border-top: 8px solid white;
+}
+
+.triangulo-arriba {
+    border-bottom: 8px solid white;
+}
+
+.navFixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.logoMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logoMenu h1 {
+    transition: transform .5s ease-in-out;
+}
+
+.menuResponsiveContainer {
+    background: var(--vs2);
+}
+
+.menuResponsiveContainer a {
+    color: var(--textWhite);
+}
+
+.tabletPCMenu a{
+    color: var(--accent-2);
+}
+
+.hamburgerMenu {
+    background-image: url('/icons/hamburgerWhite.svg');
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: bounceIn;
+    animation-duration: 2s;
+}
+
+.crossMenu {
+    background-image: url('/icons/crossWhite.svg');
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+.menuOpened ul{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    max-height: none;
+    opacity: 1;
+    transition: max-height .75s ease, opacity .75s ease;
+    z-index: 999;
+}
+
+.productosClose {
+    background: transparent;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .75s ease, opacity .75s ease;
+    width: 100%;
+    overflow: hidden;
+}
+
+.productosOpen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-height: 150px;
+    opacity: 1;
+    transition: max-height .75s ease, opacity .75s ease;
+}
+
+.bodasEventosClose {
+    background: transparent;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .75s ease, opacity .75s ease;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bodasEventosOpen {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    max-height: 150px;
+    opacity: 1;
+    transition: max-height .75s ease, opacity .75s ease;
+}
+
+/* * Medida Tablet */
+
+@media ( 760px <= width ) {
+
+
+    .tabletPCMenu a{
+        color: var(--accent);
+    }
+
+    .logoMenu button {
+        display: none;
+    }
+
+    .menuResponsiveContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px 20px 40px;
+    }
+
+    .menuResponsive {
+        width: 100%;
+        height: auto;
+    }
+
+    .menuResponsive ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-height: none;
+        margin: 0;
+        padding: 0;
+        transition: none;
+        opacity: 1;
+        gap: 2rem;
+    }
+
+    .logoMenu {
+        background: none;
+        padding: 20px 0 20px 0;
+    }
+
+    .tabletPCMenu {
+        display: initial;
+        width: fit-content;
+    }
+
+    .productosClose {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        width: fit-content;
+        height: auto;
+        max-height: 0;
+        background: var(--vs2);
+        opacity: 0;
+        transition: max-height .75s ease, opacity .75s ease;
+        overflow: hidden;
+    }
+
+    .productosClose li {
+        padding: 0 5px 0 5px;
+    }
+
+
+    .productosOpen {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        width: fit-content;
+        height: auto;
+        background: var(--vs2);
+        opacity: 1;
+        transition: max-height .75s ease, opacity .75s ease;
+        z-index: 999;
+    }
+
+    .productosOpen li {
+        padding: 0 5px 0 5px;
+    }
+
+    .bodasEventosClose {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        width: fit-content;
+        height: auto;
+        max-height: 0;
+        background: var(--vs2);
+        opacity: 0;
+        transition: max-height .75s ease, opacity .75s ease;
+        overflow: hidden;
+    }
+
+    .bodasEventosClose li {
+        padding: 0 5px 0 5px;
+    }
+
+    .bodasEventosOpen {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        width: fit-content;
+        height: auto;
+        background: var(--vs2);
+        opacity: 1;
+        transition: max-height .75s ease, opacity .75s ease;
+        z-index: 999;
+    }
+
+    .bodasEventosOpen li {
+        padding: 0 5px 0 5px;
+    }
+}
+
+/** Medida PC  */
+
+@media ( 1024px <= width ) {
+
+    .menuResponsive b,
+    .menuResponsive a,
+    .tabletPCMenu a {
+        transition: color .5s ease;
+    }
+
+    .triangulo-abajo {
+        transition: border-top .5s ease;
+    }
+
+    .triangulo-arriba {
+        transition: border-bottom .5s ease;
+    }
+
+    .menuResponsive li:hover,
+    .menuResponsive a:hover{
+        color: var(--accent);
+
+        .triangulo-abajo{
+            border-top: 8px solid var(--accent);
+        }
+
+        .triangulo-arriba {
+            border-bottom: 8px solid var(--accent);
+        }
+    }
+
+    .tabletPCMenu a:hover {
+        color: var(--textWhite);
+    }
+
+    .logoMenu h1:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media ( 1225px <= width ) {
+
+    nav ul {
+        font-size: 1rem;
+    }
+
+    .productosOpen,
+    .productosClose,
+    .bodasEventosOpen,
+    .bodasEventosClose {
+        font-size: 1.1rem;
+    }
+
+    .menuResponsiveContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 40px 0px 40px;
+    }
+
+    .menuResponsive {
+        max-width: 60%;
+    }
+
+    .menuResponsive ul {
+        gap: 2.5rem;
+    }
+}
+
+@media ( 1285px <= width ) {
+    nav ul {
+        font-size: 1.1rem;
+    }
+    
+    nav ul b {
+        cursor: default;
+    }
+}
+
+@media ( 1364px <= width ) {
+    nav ul {
+        font-size: 1.2rem;
+    }
+}

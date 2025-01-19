@@ -1,10 +1,12 @@
-export { Header } from "./Header"
-export { NavbarMenu } from "./NavbarMenu";
-export { NavItems } from "./NavItems";
-export { Button } from "./Button";
-export { SectionContaier } from "./SectionContaier";
-export { Desplegable } from "./Desplegable";
-export { QA } from "./QA";
-export { Instrucciones } from "./Instrucciones";
-export { BackgroundImage } from "./BackgroundImage";
-export { Layout } from "./Layout";
+export * from './NavItem'
+export * from './NewPage'
+export * from './ProductsCard'
+export * from './ReviewsCard'
+export * from './ImgSlider'
+export * from './Navbar'
+export * from './FormContact'
+export * from './InfiniteLoop'
+export * from './WhatsAppMessage'
+export * from './NavbarMenu'
+export * from '../sections/Shared/ContactUs'
+export * from './MetaTags'

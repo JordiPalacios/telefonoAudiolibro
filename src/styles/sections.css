@@ -1,0 +1,258 @@
+/* Specify Styles for All Sections */
+
+*{
+    box-sizing: border-box;
+    scrollbar-color: var(--secondary) var(--contrastBlack2);
+}
+
+body, html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: var(--primary-font);
+}
+
+h1,h2,h3,h4,
+p,img,button, ul {
+    user-select: none;
+}
+
+h1{
+    font-family: var(--tittle-font);
+    font-size: 2rem;
+    margin: 5px;
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-family: var(--secondary-font);
+}
+
+h4 {
+    font-size: 1rem;
+    font-family: var(--accent-font);
+}
+
+footer {
+    font-size: .75rem;
+    color: var(--textWhite);
+}
+
+video {
+    pointer-events: none;
+}
+
+.logoMenu h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+    color: var(--textWhite);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--primary-font);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: filter 0.25s;
+    border: none;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-wrap: balance;
+    text-align: center;
+    gap: 1rem;
+}
+
+.buttonsContainer button {
+    background: transparent;
+    outline: 2px solid var(--accent);
+    transition: transform .5s ease-in-out;
+}
+
+.buttonsContainer button a {
+    color: var(--accent)
+}
+
+.line {
+    border: none; 
+    height: 2px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* Propiedades Slider */
+.slick-dots {
+    bottom: -20px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--textWhite);
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    color: var(--secondary);
+}
+
+/* Whatsapp Logo */
+
+.contactFixed {
+    position: fixed;
+    margin-right: 0px;
+    bottom: 50px;
+    right: 5px;
+    transition: transform .5s ease-in-out;
+    z-index: 999;
+}
+
+/* Animacion Aparicion Img */
+
+@keyframes showImgWhatsApp {
+    from {
+        opacity: 0;
+        scale: 0%;
+    } to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.contactFixed img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: showImgWhatsApp;
+
+    animation-range: entry 50% cover 80%;
+    animation-fill-mode: both;
+}
+
+/* Animacion Aparicion Img */
+
+@keyframes showImg {
+    from {
+        opacity: 0;
+        scale: 15%;
+    } to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: showImg;
+
+    animation-range: entry 15% cover 50%;
+    animation-fill-mode: both;
+}
+
+/* Medidad Tablet */
+@media ( 760px <= width ) {
+
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+    
+    p {
+        font-size: 1.05rem;
+        font-family: var(--secondary-font);
+    }
+
+    .contactFixed {
+        right: 10px;
+    }
+
+    button {
+        margin: 10px 0 10px 0;
+    }
+}
+
+/* Medidas PC  */
+@media ( 1024px <= width ) {
+
+    h1{
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        font-family: var(--secondary-font);
+    }
+
+    .contactFixed {
+        right: 20px;
+    }
+
+    .buttonsContainer button:hover {
+        transform: scale(1.1);
+    }
+
+    .slick-dots {
+        bottom: -30px;
+    }
+
+    .contactFixed:hover {
+        transform: scale(1.25);
+    }
+}
+

@@ -1,0 +1,83 @@
+.aboutUsContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url('/img/reviews_equipo/bwDavidIvet.webp');
+    background-size:contain;
+    background-attachment: fixed;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.aboutUsContainer::before {
+    content: ''; 
+    position: absolute; 
+    top: -2px;
+    left: 0px;
+    right: 0px;
+    bottom: -2px;
+    z-index: 1;
+}
+
+.aboutUsContainer > * {
+    position: relative;
+    z-index: 2;
+}
+
+.aboutUsContainer h2 {
+    font-family: var(--tittle-font);
+    font-size: 2rem;
+    color: var(--textWhite);
+    background-color: var(--accent);
+    padding: 5px;
+    margin: 0;
+}
+
+.aboutUsContainer img {
+    display: none;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px 0 20px 0;
+    filter: drop-shadow(0px 0px 20px var(--contrastBlack2));
+    border-radius: 25px;
+}
+
+.aboutUsContainer p {
+    max-width: 1000px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.aboutUsContainer span {
+    color: var(--accent);
+}
+
+/* Medidad Tablet */
+@media ( 760px <= width ) {
+    .aboutUsContainer h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medidas PC  */
+@media ( 1025px <= width ) {
+    .aboutUsContainer h2 {
+        font-size: 2.75rem;
+    }
+
+    .aboutUsContentContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .aboutUsContainer img {
+        display: inline-block;
+    }
+}

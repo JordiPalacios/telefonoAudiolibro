@@ -1,0 +1,179 @@
+.service3Container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    align-items: center;
+    text-align: center;
+    text-wrap: balance;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.service3ContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.service3Container img {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 0px 10px var(--contrastBlack2));
+    border-radius: 25px;
+}
+
+.service3Container h1 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+    color: var(--textWhite);
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+}
+
+.service3Container h2 {
+    display: none;
+}
+
+.service3Container a {
+    font-weight: bolder;
+}
+
+/* ******************************************
+*** Service 3 Slider ***
+****************************************** */
+
+.fotomatonImgService3 {
+
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    padding: 0 25px;
+    margin: 0 auto;
+    filter: drop-shadow(0px 0px 10px var(--contrastBlack2));
+}
+
+.service3Container .slick-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service3Container .slick-slider img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Animaciones para el servicio 1 */
+
+@keyframes showImgSlider {
+    from {
+        opacity: 0%;
+        scale: 25%;
+    } to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+
+.fotomatonImgService3 {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: showImgSlider;
+
+    animation-range: entry 15% cover 50%;
+    animation-fill-mode: both;
+}
+
+
+/* Medidad Tablet */
+@media ( 760px <= width ) {
+    .service3ContentContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: stretch;
+        margin: 10px 50px 10px 10px;
+        gap: 5rem;
+    }
+
+    .service3Container h1 {
+        font-size: 2.75rem;
+        padding-bottom: 0;
+        color: var(--textWhite);
+        text-decoration: none;
+    }
+
+    .service3Container h2 {
+        padding-bottom: 0;
+        color: var(--accent);
+        padding: 5px;
+    }
+
+    .service3Container h2 {
+        display: inline-block;
+        margin: 0 0 10px 0;
+        padding: 5px;
+        font-style: italic;
+        font-weight: bolder;
+        color: var(--textWhite);
+        background: var(--secondary);
+        
+    }
+
+    .service3Container .line {
+        max-width: 80%;
+        border-top: 1px solid var(--textWhite);
+    }
+
+    .service3DescriptionContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+}
+
+/* Medidas PC  */
+@media ( 1024px <= width ) {
+
+    .service3Container {
+        margin: 0;
+    }
+
+    .service3Container h1 {
+        font-size: 3rem;
+    }
+
+    .service3Container h2{
+        display: inline-block;
+        margin: 0;
+        font-style: italic;
+        font-weight: bolder;
+    }
+
+    .service3Container img {
+        max-width: 400px;
+    }
+
+    .service3ContentContainer {
+        margin: 50px 40px 50px 50px;
+
+    }
+
+    .service3DescriptionContainer {
+        max-width: 1000px;
+        gap: 0;
+    }
+
+}

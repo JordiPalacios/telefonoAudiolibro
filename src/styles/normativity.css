@@ -1,0 +1,35 @@
+main {
+    background: var(--vs2);
+}
+
+.normativityContainer .line {
+    max-width: 100%;
+    width: 100%;
+    border-top: 1px solid var(--secondary);
+    padding-top: 0px;
+    margin: 0;
+}
+
+.normativityContainer {
+    margin: 0;
+    padding: 125px 50px 0 45px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-wrap: balance;
+}
+
+.normativityContainer,
+.normativityContainer li {
+    color: var(--textWhite);
+}
+
+.normativityContainer h1,
+.normativityContainer h3,
+.normativityContainer h4 {
+    margin: 5px 0 5px 0;
+}
+
+.normativityContainer a { 
+    color: var(--accent);
+}

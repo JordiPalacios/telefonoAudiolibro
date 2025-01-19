@@ -1,0 +1,45 @@
+/* Definimos los colores de la web */
+:root {
+    font-family: 'Lora Variable', 'Adamina' ,'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    
+    color: var(--textWhite);
+    background-color: var(--vs2);
+
+    /** Fonts */
+    --primary-font: 'Nunito Sans Variable', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --accent-font: 'Lobster', system-ui;
+    --tittle-font: 'Anton', sans-serif;
+
+    /** Primary Colors */
+    --textWhite: #FFFFFF;
+    --accent: #FC008B;
+    --accent-2: #ff9fef;
+    --secondary: #E82F8A;
+    --textBlack : #010101;
+
+    --contrastBlack: #191919;
+    --contrastBlack2: #262626;
+
+    --background: #100811;
+
+    /** VisualShow Colors*/
+    --vs: #410049;
+    --vs2: #050006;
+    --gradient-vs: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(89,3,99,1) 100%);
+
+    --gradient-button-1: linear-gradient(145deg, rgba(245,211,251,1) 0%, rgba(228,108,239,1) 50%, rgba(73,8,74,1) 100%);
+    --gradient-button-2: linear-gradient(145deg, rgba(120,47,129,1) 0%, rgba(89,31,97,1) 50%, rgba(59,12,65,1) 100%);
+    
+    --gradient-bg-1: linear-gradient(180deg, rgba(232,184,241,1) 0%, rgba(228,108,239,1) 50%, rgba(182,74,191,1) 100%);
+    --gradient-bg-2: linear-gradient(180deg, #100811 0%, #9f56a8 25%, #a352ad 100%);
+    --gradient-bg-3: linear-gradient(180deg, #100811 0%, #3c1d41 25%, #100811 100%);
+
+}

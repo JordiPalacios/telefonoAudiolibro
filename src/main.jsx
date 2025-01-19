@@ -1,10 +1,21 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import '@fontsource-variable/lora';
+import '@fontsource/roboto/700.css';
+import '@fontsource/adamina';
+import '@fontsource/lobster';
+import '@fontsource-variable/nunito-sans';
+import '@fontsource/anton';
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import Web from './Web.jsx'
 import './styles/index.js'
+import 'animate.css'
+import { BrowserRouter } from 'react-router-dom'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Web />
-  </StrictMode>,
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Web />
+    </BrowserRouter>
+  </React.StrictMode>,
 )

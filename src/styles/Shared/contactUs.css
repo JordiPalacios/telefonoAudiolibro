@@ -1,0 +1,284 @@
+/*********** Form **************
+****************************************** */
+form label {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form a {
+    color: var(--secondary);
+}
+
+input,
+textarea, input:focus,
+textarea:focus {
+    color: var(--secondary);
+    font-size: .8rem;
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    cursor: pointer;
+    margin: .5rem 0 .5rem;
+}
+
+.contactoContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    color: var(--secondary);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.contactoContainer h2 {
+    font-family: var(--tittle-font);
+    font-size: 2rem;
+    text-decoration: underline ;
+    text-decoration-color: var(--accent);
+    color: var(--textWhite);
+}
+
+
+.elementsContainer {
+    width: 90%;
+    height: auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.formContainer  label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    margin-bottom: 2px;
+    gap: .2rem;
+}
+
+
+.formContainer input{
+    text-align: left;
+    font-weight: 700;
+    color: var(--textWhite);
+    border: 2px solid var(--secondary);
+    border-radius: 15px;
+}
+
+.formContainer input::placeholder{
+    text-align: left;
+    color: var(--secondary);
+}
+
+.formContainer input:focus {
+    border: 2px solid transparent;
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="email"],
+.formContainer input[type="tel"],
+.formContainer input[type="date"] {
+    cursor: pointer;
+    text-align: left;
+    direction: ltr; 
+    padding-left: 5px; 
+}
+
+.formContainer select {
+    width: 100%;
+    padding: 1rem 0 1rem 5px;
+    border: 2px solid var(--secondary);
+    border-radius: 15px;
+    background-color: transparent; 
+    color: var(--secondary); 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.formContainer select:focus {
+    border-color: var(--secondary);
+}
+
+.formContainer option {
+    background: var(--contrastBlack2);
+    color: var(--textWhite);
+}
+
+
+/* ************************************************** */
+/* * CheckBox Personalization Creating a NewCheckBox */
+
+.checkBoxContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    gap: 5px;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkBoxContainer label {
+    width: fit-content;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: var(--textWhite);
+}
+
+.checkBoxContainer input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkBoxContainer .checkbox {
+    position: absolute;
+    top: -15%;
+    left: 4%;
+    height: 20px;
+    width: 20px;
+    background-color: var(--vs2);
+    border: 2px solid var(--accent);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkBoxContainer input:checked ~ .checkbox {
+    background-color: var(--accent);
+}
+
+.checkBoxContainer .checkbox::after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.checkBoxContainer input:checked ~ .checkbox::after {
+    display: block;
+}
+
+.checkBoxContainer .checkbox::after {
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--textWhite);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkBoxContainer .checkBoxText {
+    display: inline-block;
+    font-size: .75rem;
+    margin-left: 40px;
+}
+
+/* ************************************************** */
+
+form button {
+    font-size: 1.25rem;
+    width: 11rem;
+    background: transparent;
+    outline: 2px solid var(--accent);
+    color: var(--accent);
+    font-weight: bolder;
+    border: none;
+    padding: .5rem;
+    margin: 1rem 0rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+
+.mediaContainer {
+    display: none;
+}
+
+/* ***************************************
+*********** Responsive **************
+****************************************** */
+
+/* Medidad Tablet */
+@media ( 760px <= width ) {
+    .contactoContainer h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medidas PC  */
+@media ( 1024px <= width ) {
+    form button {
+        transition: transform .5s ease;
+    }
+
+    form button:hover {
+        transform: scale(1.15);
+    }
+
+    
+.checkBoxContainer .checkbox {
+    top: 5%;
+    left: 4%;
+    height: 20px;
+    width: 20px;
+}
+
+    .checkBoxContainer .checkBoxText {
+        font-size: 1rem;
+    }
+
+    .contactoContainer h2 {
+        font-size: 2.75rem;
+    }
+
+    .elementsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .formContainer {
+        z-index: 2;
+        width: 100%;
+        max-width: 500px;
+        order: 1;
+    }
+
+    .mediaContainer {
+        display: block;
+        position: absolute;
+        max-width: 400px;
+        rotate: 15deg;
+        right: -55%;
+        top: 5%;
+        z-index: 99;
+    }
+
+    .mediaContainer img {
+        max-width: 80%;
+        height: auto;
+    }
+
+}
+
+@media ( 1300px <= width ) { 
+    .mediaContainer {
+        right: -60%;
+        top: 0%;
+    }
+
+    .mediaContainer img {
+        max-width: 100%;
+    }
+}

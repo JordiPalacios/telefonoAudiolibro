@@ -1,0 +1,18 @@
+[
+    {
+        "urlImg" : "./img/servicios/fotomaton360/fotomaton360_0.webp",
+        "id": "fotomaton360"
+    } ,
+    {
+        "urlImg" : "./img/servicios/fotomaton360/fotomaton360_1.webp",
+        "id": "fotomatonBarcelona"
+    },
+    {
+        "urlImg" : "./img/servicios/fotomaton360/fotomaton360_3.webp",
+        "id": "fotomatonNovios"
+    },
+    {
+        "urlImg" : "./img/servicios/fotomaton360/fotomaton360_2.webp",
+        "id": "fotomatonAtrezzoBoda"
+    }
+]
