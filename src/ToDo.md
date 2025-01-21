@@ -22,10 +22,10 @@ ToDo:
 [] Jordi Code:
     [] Introducir los nuevos meta tags
     [] Navegación:
-        [] Inicio
-        [] Preguntas frecuentes
-        [] Otras historias grabadas
-        [] Nosotros
+        [x] Inicio
+        [x] Preguntas frecuentes
+        [x] Otras historias grabadas
+        [x] Nosotros
         [] Reservar ahora (botón diferente a los demás)
     [] Secciones nuevas:
         [] Header

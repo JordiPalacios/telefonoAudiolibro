@@ -9,8 +9,8 @@
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.5;
     
-    color: var(--textWhite);
-    background-color: var(--vs2);
+    color: var(--textBlack);
+    background-color: var(--tf2);
 
     /** Fonts */
     --primary-font: 'Nunito Sans Variable', sans-serif;
@@ -30,10 +30,20 @@
 
     --background: #100811;
 
-    /** VisualShow Colors*/
-    --vs: #410049;
-    --vs2: #050006;
-    --gradient-vs: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(89,3,99,1) 100%);
+    /** @Telefonoaudiolibro Colors*/
+    --tf-50: #fef2f5;
+    --tf-100: #fee5eb;
+    --tf-200: #fccfdc;
+    --tf-300: #fab8cb;
+    --tf-400: #f5779f;
+    --tf-500: #ec477f;
+    --tf-600: #b61a5a;
+    --tf-700: #490825;
+    --tf-800: #981951;
+    --tf-900: #83184b;
+    --tf-950: #490825;
+
+    --gradient-tf: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(89,3,99,1) 100%);
 
     --gradient-button-1: linear-gradient(145deg, rgba(245,211,251,1) 0%, rgba(228,108,239,1) 50%, rgba(73,8,74,1) 100%);
     --gradient-button-2: linear-gradient(145deg, rgba(120,47,129,1) 0%, rgba(89,31,97,1) 50%, rgba(59,12,65,1) 100%);

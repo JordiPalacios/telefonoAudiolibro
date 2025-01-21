@@ -147,7 +147,7 @@ textarea:focus {
     left: 4%;
     height: 20px;
     width: 20px;
-    background-color: var(--vs2);
+    background-color: var(--tf2);
     border: 2px solid var(--accent);
     border-radius: 4px;
     cursor: pointer;

@@ -74,11 +74,11 @@ nav button{
 }
 
 .menuResponsiveContainer {
-    background: var(--vs2);
+    background: var(--tf-300);
 }
 
 .menuResponsiveContainer a {
-    color: var(--textWhite);
+    color: var(--textBlack);
 }
 
 .tabletPCMenu a{
@@ -220,7 +220,7 @@ nav button{
         width: fit-content;
         height: auto;
         max-height: 0;
-        background: var(--vs2);
+        background: var(--tf-300);
         opacity: 0;
         transition: max-height .75s ease, opacity .75s ease;
         overflow: hidden;
@@ -238,7 +238,7 @@ nav button{
         position: absolute;
         width: fit-content;
         height: auto;
-        background: var(--vs2);
+        background: var(--tf-300);
         opacity: 1;
         transition: max-height .75s ease, opacity .75s ease;
         z-index: 999;
@@ -256,7 +256,7 @@ nav button{
         width: fit-content;
         height: auto;
         max-height: 0;
-        background: var(--vs2);
+        background: var(--tf-300);
         opacity: 0;
         transition: max-height .75s ease, opacity .75s ease;
         overflow: hidden;
@@ -273,7 +273,7 @@ nav button{
         position: absolute;
         width: fit-content;
         height: auto;
-        background: var(--vs2);
+        background: var(--tf-300);
         opacity: 1;
         transition: max-height .75s ease, opacity .75s ease;
         z-index: 999;
@@ -304,7 +304,7 @@ nav button{
 
     .menuResponsive li:hover,
     .menuResponsive a:hover{
-        color: var(--accent);
+        color: var(--tf-600);
 
         .triangulo-abajo{
             border-top: 8px solid var(--accent);
