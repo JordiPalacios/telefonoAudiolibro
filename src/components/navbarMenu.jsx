@@ -11,35 +11,38 @@ export const NavbarMenu = () => {
     const { navbarRef, headerRef} = useContext(NavbarContext)
     const workingMode = useWorkingMode()
 
-    const handleMouseEnter = (menu) => {
-        if (window.innerWidth >= 748) {
-            switch (menu) {
-                case 'products' :
-                    setIsMoreProductsInfo(true)
-                    break
-                case 'weddings' :
-                    setIsMoreWeddingsInfo(true)
-                    break
-                default :
-                    break
-            }
-        }
-    }
+    // *******************************************************************
+    // No se si lo vamos a usar en este proyecto, lo comento de momento
+    // const handleMouseEnter = (menu) => {
+    //     if (window.innerWidth >= 748) {
+    //         switch (menu) {
+    //             case 'products' :
+    //                 setIsMoreProductsInfo(true)
+    //                 break
+    //             case 'weddings' :
+    //                 setIsMoreWeddingsInfo(true)
+    //                 break
+    //             default :
+    //                 break
+    //         }
+    //     }
+    // }
 
-    const handleMouseLeave = (menu) => {
-        if (window.innerWidth >= 748) {
-            switch (menu) {
-                case 'products' :
-                    setIsMoreProductsInfo(false)
-                    break
-                case 'weddings' :
-                    setIsMoreWeddingsInfo(false)
-                    break
-                default :
-                    break
-            }
-        }
-    }
+    // const handleMouseLeave = (menu) => {
+    //     if (window.innerWidth >= 748) {
+    //         switch (menu) {
+    //             case 'products' :
+    //                 setIsMoreProductsInfo(false)
+    //                 break
+    //             case 'weddings' :
+    //                 setIsMoreWeddingsInfo(false)
+    //                 break
+    //             default :
+    //                 break
+    //         }
+    //     }
+    // }
+    // *******************************************************************
 
 
     const handleWindowSizeChange = () => {
@@ -92,12 +95,17 @@ return (
                     className={isMenuToggled ? 'crossMenu' : 'hamburgerMenu'}
                     onClick={() => toggleClass('menuOpen')}>
                     </button>
-                    <h1><NewPage href='/' label='Visual Show 360' /></h1>
+                    <h1><NewPage href='/' label='@Telefonoaudiolibro' /></h1>
                 </div>
                 <div className={isMenuToggled ? 'menuOpened' : 'menuResponsive'}>
                     <ul>
-                        <b><NewPage href='/' label='Home' /></b>
-                        <div className='tabletPCMenu'>  
+                        <li>
+                            <b><NewPage href='/' label='Inicio' /></b>
+                        </li>
+                        {/* *******************************************************************
+                        No se si lo vamos a usar en este proyecto, lo comento de momento */}
+
+                        {/* <div className='tabletPCMenu'>  
                             <div onMouseLeave={() => handleMouseLeave('products')}>
                                 <b>                                    
                                 <li 
@@ -114,6 +122,7 @@ return (
                                 </div>
                             </div>                          
                         </div>
+
                         <div className='tabletPCMenu'>  
                             <div onMouseLeave={() => handleMouseLeave('weddings')} >
                                 <b>
@@ -130,17 +139,22 @@ return (
                                     <NavItem href='#kitAntiResaca' label='Kit AntiResaca' page='otrosProductos' />
                                 </div>
                             </div>                          
-                        </div>
-                        <b>
-                            <a 
-                            href="https://www.instagram.com/visualshow360?igshid=YmMyMTA2M2Y=" 
-                            target="_blank" 
-                            rel='noreferrer'                            
-                            aria-label='Enlace al Instagram de VisualShow360 para ver más ejemplos de bodas en barcelona'>
-                                Eventos Reales
-                            </a>
-                        </b>
-                        <b><NavItem href='#nosotros' label='Nosotros' page='home' /></b>             
+                        </div> */}
+                        {/* ******************************************************************* */}
+                        <li>
+                            <b>
+                                <a 
+                                href="https://www.instagram.com/visualshow360?igshid=YmMyMTA2M2Y=" 
+                                target="_blank" 
+                                rel='noreferrer'                            
+                                aria-label='Enlace al Instagram de VisualShow360 para ver más ejemplos de bodas en barcelona'>
+                                    Otras historias grabadas
+                                </a>
+                            </b>
+                        </li>
+                        <b><NavItem href='#nosotros' label='Preguntas Frecuentes' page='home' /></b>
+                        <b><NavItem href='#nosotros' label='Nosotros' page='home' /></b>
+                        <b><NavItem href='#nosotros' label='Reservar ahora' page='home' /></b>
                     </ul>
                 </div>
             </div>
