@@ -17,25 +17,66 @@ Cosas Instaladas:
 ToDo:
 
 [] David & Ivet:
-    [] Nuevo Logo de VisualShow360
-        · Ponerlo en zona formulario + footer. ¿En la barra navegación también?
-    [] Dominio web para vincularlo a hostinger
-    [] Vídeo horizontal en blanco y negro para la presentación en PC.
-    [] Vídeo presentación en Android vertical ¿Gusta el que esta ahora? ¿O pongo que en mvl solo se vea la foto y evitamos problemas?
-    [] Ímagenes nuevas:
-        [] Imágenes que poner en el slider del servicio 1 (fotomaton360, 6 fotos)
-        [] ¿Dejamos el gif o lo renovamos, con la foto de fondo?
-        [] Imagen del Magic Mirror White
-        [] Dejamos la foto en mvl del sobre nosotros o la quitamos. En PC decirme que foto ponendremos.
-        [] ¿Nueva imagen de Letras Love?
-        [] ¿Nueva imagen de Neones?
-        [] ¿Nueva imagen de KitAntiresaca?
 
 
 [] Jordi Code:
-
-    [] Eliminar el texto sobre las cookies en temas legales y el uso de dato de terceros, no lo usamos por lo que no necesitamos cookies banner
-    
-    [] Crear Sistema de Cookies
-        [] PopUp Cookies
-        [] Programa aceptacion Cookies
+    [] Introducir los nuevos meta tags
+    [] Navegación:
+        [] Inicio
+        [] Preguntas frecuentes
+        [] Otras historias grabadas
+        [] Nosotros
+        [] Reservar ahora (botón diferente a los demás)
+    [] Secciones nuevas:
+        [] Header
+            Imagen en el lado izquierdo del telefonoaudiolibro.
+            Derecha la descripción:
+                Texto persuasivo que me pasara telefonoaudiolibro.
+                Debajo un botón a modo de CTA que nos lleve a un form de pago.
+        [] Loop infinito con las marcas que han trabajado o su propio nombre de marca
+        [] Section 1 - Galeria vídeos: 
+            [] Slider en la que puedan pulsar al vídeo (como en visualshow360) pero con videos.
+            [] Frase con un CTA (Ver más historias como esta o síguenos) a las RRSS.
+        [] Section 2 - Explicación teléfono detallada:
+            [] Explicación del telefonoaudilibro
+                [] Título.
+                [] Botón que al pulsarlo nos haga aparecer un popup con un vídeo para que se reproduzca.
+                [] Explicación de los pasos que son 3.
+                [] Botón de reservar ahora en el 3r paso que nos llevara al formulario creado.
+        [] Section 3 - Reseñas (¿Opcional?):
+            [] Izquierda imágen sobre las reviews.
+            [] Derecha slider con las reviews escritas por los clientes.
+        [] Section 4 - Galeria Audios:
+            [] Título grande llamativo.
+            [] Foto de fondo.
+            [] Audios a la derecha bonitos para que lo escuchen los clientes.
+        [] Section 5 - Galería imagenes:
+            [] Slider automático que vayan pasando imágenes en formato vertical.
+            [] Poder seleccionar si en PC se ven 4 fotos y en teléfono 2.
+        [] Sección 6 - Explicación extra del teléfono:
+            [] Foto bonita que nos pasara telefonoaudiolibro.
+            [] Traducir las frases del pdf que nos ha proporcionado telefonoaudiolibro.
+        [] Section 7 - Nuestra Historia: 
+            [] Sección diciendo que son humanos (telefonoaudiolibro pasará el copy)
+                Imagen a la izquierda y descripción a la derecha (como visualshow360).
+        [] Footer:
+            [] Logo telefonoaudiolibro - Izquierda .
+            [] Enlaces a las secciones con los nombres que me dirán - Centro derecha en 2 columnas.
+            [] Frase corta + email + rrss + logo chulo - Derecha de todo en columna.
+            [] Debajo del todo en modo row, los derechos de copy + páginas legales.
+    [] Nueva página de preguntas frecuentes
+        [] Sección de preguntas frecuentes
+        [] Footer debajo
+    [] Componentes:
+        [] Formulario de pago:
+            [] Usuario introduce su:
+                Nombre
+                Apellidos
+                Correo
+                Fecha evento
+                Siguiente -> Esto le envia un correo directamente a telefonoaudiolibro + avanza a la pasarela de pago
+            [] Poner el link de stripe en el producto
+        [] Botón WhatsApp
+        [] Sliders con vídeo
+        [] Sliders con fotos
+        [] Popup vídeo explicativo
