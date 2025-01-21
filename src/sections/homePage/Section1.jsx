@@ -5,7 +5,7 @@ import FotomatonData from '../../assets/mocks/fotomatonData.json'
 import Slider from 'react-slick';
 import { ImgSlider, NavItem } from '../../components';
 
-export const Service1 = () => {
+export const Section1 = () => {
     const fotomatonData = FotomatonData
 
     useEffect (() => {

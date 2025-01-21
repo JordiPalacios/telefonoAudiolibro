@@ -90,7 +90,7 @@ export const LazyReviews = () => {
         }
 
         const observer = new IntersectionObserver(onChange, {
-            rootMargin: '100px'
+            rootMargin: '400px'
         })
 
         observer.observe(elementRef.current)

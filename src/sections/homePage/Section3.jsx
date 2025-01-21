@@ -5,7 +5,7 @@ import { LoadContext } from '../../context/LoadContext'
 import magicMirrorWhiteData from '../../assets/mocks/magicmirrorWhiteData.json'
 import Slider from 'react-slick'
 
-const Service3 = () => {
+const Section3 = () => {
     const workingMode = useWorkingMode()
 
     const fotomatonData = magicMirrorWhiteData
@@ -104,7 +104,7 @@ return (
 )
 }
 
-export const LazyService3 = () => {
+export const LazySection3 = () => {
     const { show, setShow } = useContext(LoadContext)
     const elementRef = useRef()
 
@@ -118,7 +118,7 @@ export const LazyService3 = () => {
         }
 
         const observer = new IntersectionObserver(onChange, {
-            rootMargin: '100px'
+            rootMargin: '400px'
         })
 
         observer.observe(elementRef.current)
@@ -128,7 +128,7 @@ export const LazyService3 = () => {
 
     return (
         <section ref={elementRef}>
-            {show ? <Service3 /> : null}
+            {show ? <Section3 /> : null}
         </section>
     )
 }

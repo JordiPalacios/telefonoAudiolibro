@@ -1,5 +1,6 @@
 import { MetaTags, WhatsAppMessage } from '../components'
-import { LazyAboutUs, LazyCompanies, LazyReviews, LazyService2, LazyService3, Presentation, Service1 } from '../sections/homePage';
+import { LazyAboutUs, LazyCompanies, LazyReviews, LazySection3, Presentation, Section1 } from '../sections/homePage';
+import { LazySection2 } from '../sections/homePage/Section2';
 import { ContactUs, LazyFooter, LazyInfiniteLoopSection } from '../sections/Shared';
 
 
@@ -23,10 +24,10 @@ export const HomeWebsite = () => {
       />
       <Presentation />
       <main>
-        <Service1 />            
+        <Section1 />            
         <LazyInfiniteLoopSection />        
-        <LazyService2 />
-        <LazyService3 /> 
+        <LazySection2 />
+        <LazySection3 /> 
         <LazyInfiniteLoopSection />
         <LazyReviews />         
         <LazyCompanies />              
