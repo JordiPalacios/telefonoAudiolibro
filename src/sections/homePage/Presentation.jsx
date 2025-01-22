@@ -1,5 +1,4 @@
 import { NavbarMenu } from '../../components'
-import { MediaDisplay } from '../../components/MediaDisplay'
 
 
 export const Presentation = () => {
@@ -16,12 +15,10 @@ return (
         <NavbarMenu />
         <div className="presentationContainer">
             <div className="tittles">                
-                <h1 className='h1Tittle'> SE CASAN&nbsp;<span style={{ color: 'var(--accent)', fontWeight: '900'}}>190.000</span> PAREJAS AL AÑO</h1>
-                <h2 className='h2Tittle'>HAZ QUE TU BODA SEA</h2>
-                <h2 className="h2TittleAccent">ESPECIAL</h2>
+                <h1>Audios que vas a querer conservar</h1>
+                <h2>Un libro de visitas de audio vintage</h2>
+                <h2>Una nueva forma de revivir los mejores recuerdos de tus personas favoritas</h2>
             </div>               
-            <MediaDisplay />
-            <img className='goService1' onClick={handleClick} src="./gifs/arrow.gif" alt="arrowGift" />
         </div>
     </header>
 )

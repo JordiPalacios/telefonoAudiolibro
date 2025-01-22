@@ -10,7 +10,7 @@
     line-height: 1.5;
     
     color: var(--textBlack);
-    background-color: var(--tf2);
+    background-color: var(--tf-300);
 
     /** Fonts */
     --primary-font: 'Nunito Sans Variable', sans-serif;

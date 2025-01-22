@@ -95,7 +95,7 @@ return (
                     className={isMenuToggled ? 'crossMenu' : 'hamburgerMenu'}
                     onClick={() => toggleClass('menuOpen')}>
                     </button>
-                    <h1><NewPage href='/' label='@Telefonoaudiolibro' /></h1>
+                    <h1><NewPage href='/' label='@Telefonoaudiolibro.es' /></h1>
                 </div>
                 <div className={isMenuToggled ? 'menuOpened' : 'menuResponsive'}>
                     <ul>

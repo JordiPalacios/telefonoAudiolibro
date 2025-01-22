@@ -9,7 +9,7 @@ export const HomeWebsite = () => {
   return (
     <>
       <MetaTags 
-        title={'@Telefonoaudiolibro | Crea tu propio recuerdo'}
+        title={'@Telefonoaudiolibro.es | Crea tu propio recuerdo'}
         keywords={'Plataforma360, Espejo Magico, White Magic Mirror, Fotomaton, Barcelona, Telefono Audiolibro, Catalunya, Bodas, Eventos, Neones, Letras Love'}
         desc={'La mejor plataforma 360 de barcelona con un atrezzo único. Haz de tu boda, evento, fiesta un momento especial con nuestro magic mirror.'}
         author={'VisualShow360'}
