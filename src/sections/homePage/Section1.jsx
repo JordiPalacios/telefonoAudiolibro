@@ -35,7 +35,7 @@ export const Section1 = () => {
     })
 
 return (
-    <section id='plataforma360'>
+    <section id='telefonoAudilibroVideos'>
         <div className="service1Container">
             <h1>Plataforma 360</h1>
             <h2>Ver a tu suegra bailando twerk te va a quitar la depresión post-boda</h2>

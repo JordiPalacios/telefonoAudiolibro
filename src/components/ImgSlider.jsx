@@ -21,7 +21,7 @@ export const ImgSlider = ({ urlImg, imgName , styleType }) => {
 
     return (
         <div className={className}>
-            <img src={urlImg} alt={imgName} />
+            <video src={urlImg} alt={imgName} controls/>
         </div>
     )
 

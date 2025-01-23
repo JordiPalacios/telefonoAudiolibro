@@ -1,18 +1,18 @@
 [
     {
-        "urlImg" : "./img/servicios/fotomaton360/fotomaton360_0.webp",
-        "id": "fotomaton360"
+        "urlImg" : "./video/videoMobile.mov",
+        "id": "telefonoaudiolibro"
     } ,
     {
-        "urlImg" : "./img/servicios/fotomaton360/fotomaton360_1.webp",
-        "id": "fotomatonBarcelona"
-    },
+        "urlImg" : "./video/videoMobile.mov",
+        "id": "telefonoaudiolibro"
+    } ,
     {
-        "urlImg" : "./img/servicios/fotomaton360/fotomaton360_3.webp",
-        "id": "fotomatonNovios"
-    },
+        "urlImg" : "./video/videoMobile.mov",
+        "id": "telefonoaudiolibro"
+    } ,
     {
-        "urlImg" : "./img/servicios/fotomaton360/fotomaton360_2.webp",
-        "id": "fotomatonAtrezzoBoda"
+        "urlImg" : "./video/videoMobile.mov",
+        "id": "telefonoaudiolibro"
     }
 ]
