@@ -95,7 +95,8 @@ return (
                     className={isMenuToggled ? 'crossMenu' : 'hamburgerMenu'}
                     onClick={() => toggleClass('menuOpen')}>
                     </button>
-                    <h1><NewPage href='/' label='@Telefonoaudiolibro.es' /></h1>
+                    {/* <h1><NewPage href='/' label='@Telefonoaudiolibro.es' /></h1> */}
+                    <img src="public\img\Extra\logo.webp" alt="logo @telefonoaudiolibro.es" width="50%" height="auto"/>
                 </div>
                 <div className={isMenuToggled ? 'menuOpened' : 'menuResponsive'}>
                     <ul>

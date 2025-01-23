@@ -8,16 +8,10 @@ header {
     z-index: 999;
 }
 
-header h1,h2 {
-    margin: 5px;
+header h1 {
+    margin: 0px;
     padding: 0;
 }
-
-.videoTabletPC,
-.imgTablet {
-    display: none;
-}
-
 
 .presentationContainer {
     display: flex;
@@ -27,49 +21,27 @@ header h1,h2 {
     min-height: 550px;
     margin-top: 100px;
     margin-bottom: 20px;
-    gap: 1rem;
     text-align: center;
     text-wrap: balance;
 }
 
 .presentationContainer h1 {
-    font-size: 3rem;
+    font-size: 1.75rem;
     font-weight: 700;
 }
 
 .presentationContainer h2 {
     font-family: 'Anton', sans-serif;
-    font-size: 2rem;
-    padding: 0px;
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
     background: none;
 }
 
-.h1Tittle,
-.h2Tittle,
-.h2TittleAccent{
-    margin: -0.25rem;
-    padding: 0;
-}
-
-.h1Tittle {
-    line-height: 3rem;
-}
-
-.h2TittleAccent {
-    position: absolute;
-    top: 60%;
-    left: 60%;
-    rotate: -10deg;
-    color: var(--accent);
-    font-size: 2rem;
-}
-
-.tittles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0rem;
+.presentationContainer img {
+    width: 75%;
+    height: auto;
+    border-radius: 25px;
 }
 
 @media ( 620px <= width ) {
@@ -104,17 +76,6 @@ header h1,h2 {
     .imgMobile {
         display: none;
     }
-
-    .h1Tittle,
-    .h2Tittle,
-    .h2TittleAccent{
-        margin: -0.75rem;
-        padding: 0;
-    }
-
-    .h1Tittle {
-        line-height: initial;
-    }
 }
 
 @media ( 900px <= width ) {
@@ -125,21 +86,6 @@ header h1,h2 {
 
     .presentationContainer h2 {
         font-size: 3rem;
-    }
-
-    .h1Tittle,
-    .h2Tittle,
-    .h2TittleAccent{
-        margin: -1rem;
-        padding: 0;
-    }
-
-    .videoTabletPC {
-        display: block;
-    }
-
-    .videoMobile {
-        display: none;
     }
 }
 
@@ -158,13 +104,6 @@ header h1,h2 {
     .presentationContainer h2 {
         font-size: 4rem;
     }
-
-    .h1Tittle,
-    .h2Tittle,
-    .h2TittleAccent{
-        margin: -1.25rem;
-        padding: 0;
-    }
 }
 
 @media ( 1400px <= width ) {
@@ -176,12 +115,4 @@ header h1,h2 {
     .presentationContainer h2 {
         font-size: 5rem;
     }
-
-    .h1Tittle,
-    .h2Tittle,
-    .h2TittleAccent{
-        margin: -1.5rem;
-        padding: 0;
-    }
-
 }

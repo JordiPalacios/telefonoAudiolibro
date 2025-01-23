@@ -65,7 +65,8 @@ nav button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 15%;
     padding: 20px;
 }
 
@@ -77,8 +78,12 @@ nav button{
     background: var(--tf-300);
 }
 
-.menuResponsiveContainer a {
+.menuResponsiveContainer .logoMenu a {
     color: var(--textBlack);
+}
+
+.menuResponsiveContainer a {
+    color: var(--textWhite);
 }
 
 .tabletPCMenu a{
@@ -86,7 +91,7 @@ nav button{
 }
 
 .hamburgerMenu {
-    background-image: url('/icons/hamburgerWhite.svg');
+    background-image: url('/icons/hamburgerBlack.svg');
     background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
@@ -95,7 +100,7 @@ nav button{
 }
 
 .crossMenu {
-    background-image: url('/icons/crossWhite.svg');
+    background-image: url('/icons/crossBlack.svg');
     background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
@@ -203,6 +208,8 @@ nav button{
     }
 
     .logoMenu {
+        justify-content: center;
+        gap: 0%;
         background: none;
         padding: 20px 0 20px 0;
     }
