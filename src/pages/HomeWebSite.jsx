@@ -26,13 +26,13 @@ export const HomeWebsite = () => {
       <main>
         <Section1 />            
         <LazyInfiniteLoopSection />        
-        <LazySection2 />
+        {/* <LazySection2 />
         <LazySection3 /> 
         <LazyInfiniteLoopSection />
         <LazyReviews />         
         <LazyCompanies />              
         <LazyAboutUs />
-        <ContactUs />
+        <ContactUs /> */}
         <WhatsAppMessage className="contactFixed" msg="https://wa.me/34653781239?text=¡Quiero%20más%20información%20sobre%20VisualShow!" />
       </main>
       <LazyFooter />

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef, useState } from 'react'
 import { useWorkingMode } from '../../assets/Customhooks/useWorkingMode'
-import { ImgSlider, NavItem } from '../../components'
+import { MediaSlider, NavItem } from '../../components'
 import { LoadContext } from '../../context/LoadContext'
 import magicMirrorWhiteData from '../../assets/mocks/magicmirrorWhiteData.json'
 import Slider from 'react-slick'
@@ -44,7 +44,7 @@ return (
             <div className="fotomatonImgService3">            
                 <Slider {...sliderSettings}>
                     {fotomatonData.map((data) => (
-                        <ImgSlider 
+                        <MediaSlider 
                         key={data.id} 
                         url={data.urlImg} 
                         name={data.id} 
@@ -78,7 +78,7 @@ return (
             <div className="fotomatonImgService3">            
                 <Slider {...sliderSettings}>
                     {fotomatonData.map((data) => (
-                        <ImgSlider 
+                        <MediaSlider 
                         key={data.id} 
                         url={data.urlImg} 
                         name={data.id}

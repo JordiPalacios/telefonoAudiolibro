@@ -88,7 +88,7 @@ button {
 }
 
 /* Propiedades Slider */
-.slick-dots {
+/* .slick-dots {
     bottom: -20px;
 }
 
@@ -99,7 +99,7 @@ button {
 
 .slick-dots li button:before {
     color: var(--secondary);
-}
+} */
 
 /* Whatsapp Logo */
 

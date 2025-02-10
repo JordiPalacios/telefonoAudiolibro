@@ -24,11 +24,11 @@ export const OtrosProductos = () => {
                 <NavbarMenu />
             </header>
             <main>
-                <Product1 />
+                {/* <Product1 />
                 <LazyInfiniteLoopSection />            
                 <Products2 />
                 <LazyInfiniteLoopSection />
-                <ContactUs />
+                <ContactUs /> */}
                 <WhatsAppMessage className="contactFixed" msg="https://wa.me/34653781239?text=Quiero%20más%20información%20sobre%20VisualShow!" />
             </main>
             <LazyFooter />

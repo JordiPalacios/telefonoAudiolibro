@@ -60,48 +60,6 @@
 *** Service 1 Slider ***
 ****************************************** */
 
-.fotomatonImgService1 {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    overflow: hidden;
-    padding: 0 30px;
-    filter: drop-shadow(0px 0px 10px var(--contrastBlack2));
-}
-
-.imgServices img{
-    aspect-ratio: 3/4;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 25px;
-    padding: 15px;
-}
-
-/* Animaciones para el servicio 1 */
-
-@keyframes showImgSlider {
-    from {
-        opacity: 0%;
-        scale: 25%;
-    } to {
-        opacity: 1;
-        scale: 100%;
-    }
-}
-
-
-.fotomatonImgService1 {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name: showImgSlider;
-
-    animation-range: entry 15% cover 50%;
-    animation-fill-mode: both;
-}
-
 /* Medidad Tablet */
 @media ( 760px <= width ) {
     #plataforma360 {
@@ -117,21 +75,6 @@
             opacity: 1;
             scale: 100%;
         }
-    }
-
-    .fotomatonImgService1 {
-        view-timeline-name: --image;
-        view-timeline-axis: block;
-
-        animation-timeline: --image;
-        animation-name: showImgSlider;
-
-        animation-range: entry 15% cover 50%;
-        animation-fill-mode: both;
-    }
-
-    .fotomatonImgService1 {
-        max-width: 500px;
     }
 
     .service1Container h1 {
@@ -168,11 +111,6 @@
 /* Medidas PC  */
 @media ( 1024px <= width ) {
 
-    .fotomatonImgService1 {
-        max-width: 1200px;
-        margin: 20px;
-    }
-
     .service1Container h1 {
         font-size: 2.75rem;
     }
@@ -199,10 +137,6 @@
 
     .service1Container h1 {
         font-size: 3rem;
-    }
-    
-    .fotomatonImgService1 {
-        max-width: 1400px;
     }
 
     .service1Details h2 {

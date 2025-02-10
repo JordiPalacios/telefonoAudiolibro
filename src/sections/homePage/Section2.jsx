@@ -1,4 +1,4 @@
-import { ImgSlider, NavItem } from '../../components'
+import { MediaSlider, NavItem } from '../../components'
 import { useWorkingMode } from '../../assets/Customhooks/useWorkingMode'
 import { useContext, useEffect, useRef, useState } from 'react'
 import { LoadContext } from '../../context/LoadContext'
@@ -44,7 +44,7 @@ return (
             <div className="fotomatonImgService2">            
                 <Slider {...sliderSettings}>
                     {fotomatonData.map((data) => (
-                        <ImgSlider 
+                        <MediaSlider
                         key={data.id} 
                         url={data.urlImg} 
                         name={data.id} 
@@ -93,7 +93,7 @@ return (
                 <div className="fotomatonImgService2">            
                     <Slider {...sliderSettings}>
                         {fotomatonData.map((data) => (
-                            <ImgSlider 
+                            <MediaSlider 
                             key={data.id} 
                             url={data.urlImg} 
                             name={data.id} 

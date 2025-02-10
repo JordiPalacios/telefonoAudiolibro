@@ -18,7 +18,7 @@ return (
             <button>
                 <a href="#contacto">¡Agenda tu reunión!</a>
             </button>
-            <p>
+            <p className='text-bold'>
                 El 99% de las personas que no lo tienen
                 en su boda se arrepienten. 
             </p>
