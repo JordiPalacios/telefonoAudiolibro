@@ -70,34 +70,14 @@ a {
 
 button {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--primary-font);
+    background: var(--accent);
     padding: 0.6rem 1.2rem;
     border-radius: 8px;
     cursor: pointer;
-    transition: filter 0.25s;
     border: none;
-}
-
-.buttonsContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    text-wrap: balance;
-    text-align: center;
-    gap: 1rem;
-}
-
-.buttonsContainer button {
-    background: transparent;
-    outline: 2px solid var(--accent);
     transition: transform .5s ease-in-out;
-}
-
-.buttonsContainer button a {
-    color: var(--accent)
 }
 
 .line {
@@ -243,7 +223,7 @@ img {
         right: 20px;
     }
 
-    .buttonsContainer button:hover {
+    button:hover {
         transform: scale(1.1);
     }
 
