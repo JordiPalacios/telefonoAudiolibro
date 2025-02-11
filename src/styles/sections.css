@@ -45,10 +45,6 @@ footer {
     color: var(--textWhite);
 }
 
-video {
-    pointer-events: none;
-}
-
 .logoMenu h1 {
     font-size: 2rem;
 }
@@ -88,7 +84,7 @@ button {
 }
 
 /* Propiedades Slider */
-/* .slick-dots {
+.slick-dots {
     bottom: -20px;
 }
 
@@ -99,7 +95,7 @@ button {
 
 .slick-dots li button:before {
     color: var(--secondary);
-} */
+}
 
 /* Whatsapp Logo */
 
