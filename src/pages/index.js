@@ -1,5 +1,5 @@
 export * from './HomeWebSite'
-export * from './OtrosProductos'
+export * from './PaginaReservas'
 export * from './AvisoLegal'
 export * from './PoliticaPrivacidad'
 export * from './TerminosCondiciones'

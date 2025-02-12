@@ -38,8 +38,6 @@ export const Section1 = () => {
 
 
     return (
-        <div>
-        <h1 className='font-semibold text-emerald-300 my-1'>Carousel</h1>
         <Slider {...sliderSettings}>
             {telefonoAudiolibroData.map((data) => (
             <MediaSlider
@@ -50,6 +48,5 @@ export const Section1 = () => {
             />
             ))}
         </Slider>
-        </div>
     )
 }

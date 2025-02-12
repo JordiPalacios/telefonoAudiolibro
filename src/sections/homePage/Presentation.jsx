@@ -1,4 +1,4 @@
-import { NavbarMenu } from '../../components'
+import { NavbarMenu, NavItem } from '../../components'
 
 
 export const Presentation = () => {
@@ -15,8 +15,9 @@ return (
                 Cada dia no se tiene a toda la familia y amigos juntos
                 Aprovecha para que todos te dejen sus mensajes
             </p>
+            <p>Este boton que nos lleve al WhatsApp</p>
             <button>
-                <a href="#contacto">¡Agenda tu reunión!</a>
+                <NavItem href='#comprobar-disponibilidad' label='¡Agenda tu reunión!' colorText='var(--accent)' page='paginaReservas'/>
             </button>
             <p className='text-bold'>
                 El 99% de las personas que no lo tienen

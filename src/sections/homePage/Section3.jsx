@@ -2,13 +2,13 @@ import { useContext, useEffect, useRef, useState } from 'react'
 import { useWorkingMode } from '../../assets/Customhooks/useWorkingMode'
 import { MediaSlider, NavItem } from '../../components'
 import { LoadContext } from '../../context/LoadContext'
-import magicMirrorWhiteData from '../../assets/mocks/magicmirrorWhiteData.json'
+import TelefonosData from '../../assets/mocks/telefonosData.json'
 import Slider from 'react-slick'
 
 const Section3 = () => {
     const workingMode = useWorkingMode()
 
-    const fotomatonData = magicMirrorWhiteData
+    const telefonosData = TelefonosData
 
     useEffect (() => {
         const handleResize = () => {
@@ -43,13 +43,13 @@ return (
             <div className="service3ContentContainer">  
             <div className="fotomatonImgService3">            
                 <Slider {...sliderSettings}>
-                    {fotomatonData.map((data) => (
+                    {telefonosData.map((data) => (
                         <MediaSlider 
                         key={data.id} 
                         url={data.urlImg} 
                         name={data.id} 
                         isVideo={false}
-                        styleType='services'/>
+                        styleType='example2'/>
                         ))}
                 </Slider>
             </div>                      
@@ -72,33 +72,34 @@ return (
         </div>
         ) : (
         <div className="service3Container">
-            <h1>Magic Mirror White</h1>
-            <h2>TUS FOTOS DE REVISTA</h2>
+            <h2>NO TODO EL MUNDO TIENE LA VOZ DE SU ABUELA GUARDADA PARA SIEMPRE</h2>
+            <img src="./img/telefonoaudiolibro/telf01.webp" alt="img" />
+            <p>Aqui va el componente de audio x3 veces</p>
             <div className="service3ContentContainer">              
-            <div className="fotomatonImgService3">            
-                <Slider {...sliderSettings}>
-                    {fotomatonData.map((data) => (
-                        <MediaSlider 
-                        key={data.id} 
-                        url={data.urlImg} 
-                        name={data.id}
-                        isVideo={false} 
-                        styleType='services'/>
-                        ))}
-                </Slider>
-            </div>
-            <div className="service3DescriptionContainer">              
-            <p>
-                Mucho <span style={{ color: 'var(--accent)'}}>cuidadito</span> con éste fotomatón, puede pasar de ser tu aliado a llevarse todo el protagonismo. <br />
-                <br />
-                Eligue un buen fondo y crea los <span style={{ color: 'var(--accent)'}}>RECUERDOS</span> más espectaculares de tu boda. No seas cutre, que en ese momento ya no hay fotógrafos.
-            </p>
-            <div className="buttonsContainer">
-            <button id='S3OthersFormularioContacto' aria-label='Nos mueve hasta el formulario de contacto'>
-                <NavItem href='#contacto' label='¡Agenda tu reunión!' colorText='var(--textWhite)' page='home'/>
-            </button>
-            </div>
-            </div>
+                <div className="fotomatonImgService3">            
+                    <Slider {...sliderSettings}>
+                        {telefonosData.map((data) => (
+                            <MediaSlider 
+                            name={data.name}
+                            url={data.url}
+                            styleType="example2"
+                            isVideo={data.isVideo}
+                            />
+                            ))}
+                    </Slider>
+                </div>
+                <div className="service3DescriptionContainer">              
+                <p>
+                    Mucho <span style={{ color: 'var(--accent)'}}>cuidadito</span> con éste fotomatón, puede pasar de ser tu aliado a llevarse todo el protagonismo. <br />
+                    <br />
+                    Eligue un buen fondo y crea los <span style={{ color: 'var(--accent)'}}>RECUERDOS</span> más espectaculares de tu boda. No seas cutre, que en ese momento ya no hay fotógrafos.
+                </p>
+                <div className="buttonsContainer">
+                <button id='S3OthersFormularioContacto' aria-label='Nos mueve hasta el formulario de contacto'>
+                    <NavItem href='#contacto' label='¡Agenda tu reunión!' colorText='var(--textWhite)' page='home'/>
+                </button>
+                </div>
+                </div>
             </div>
         </div>
         )}        
