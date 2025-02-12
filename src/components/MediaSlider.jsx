@@ -19,7 +19,7 @@ export const MediaSlider = ({name, url, styleType, isVideo}) => {
             {isVideo ?
                 <video src={url} alt={name} className='w-full p-2 rounded-3xl' controls/>
             :
-                <img src={url} alt={name} className='w-full p-2 rounded-3xl'/>
+                <img src={url} alt={name} className='w-14 p-2 rounded-3xl'/>
             }
         </div>
     )
