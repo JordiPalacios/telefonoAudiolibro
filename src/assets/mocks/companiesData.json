@@ -1,73 +1,73 @@
 [
     {
-        "urlImg" : "./img/empresas/Acciona.webp",
-        "companyName": "acciona",
-        "alt": "acciona"
+        "url" : "./img/empresas/Acciona.webp",
+        "company": "acciona",
+        "name": "acciona"
     } ,
     {
-        "urlImg" : "./img/empresas/Astrazeca.webp",
-        "companyName": "astrazeca",
-        "alt":"astrazeca"
+        "url" : "./img/empresas/Astrazeca.webp",
+        "company": "astrazeca",
+        "name":"astrazeca"
     },
     {
-        "urlImg" : "./img/empresas/Atresmedia.webp",
-        "companyName": "atresmedia",
-        "alt":"atresmedia"
+        "url" : "./img/empresas/Atresmedia.webp",
+        "company": "atresmedia",
+        "name":"atresmedia"
     },
     {
-        "urlImg" : "./img/empresas/Barcelona.webp",
-        "companyName": "barcelona",
-        "alt":"barcelona"
+        "url" : "./img/empresas/Barcelona.webp",
+        "company": "barcelona",
+        "name":"barcelona"
     },
     {
-        "urlImg" : "./img/empresas/CaixaBanc.webp",
-        "companyName": "caixabanc",
-        "alt":"caixabanc"
+        "url" : "./img/empresas/CaixaBanc.webp",
+        "company": "caixabanc",
+        "name":"caixabanc"
     },
     {
-        "urlImg" : "./img/empresas/Cosmopolitan.webp",
-        "companyName": "cosmopolitan",
-        "alt":"cosmopolitan"
+        "url" : "./img/empresas/Cosmopolitan.webp",
+        "company": "cosmopolitan",
+        "name":"cosmopolitan"
     },
     {
-        "urlImg" : "./img/empresas/Dell.webp",
-        "companyName": "dell",
-        "alt":"dell"
+        "url" : "./img/empresas/Dell.webp",
+        "company": "dell",
+        "name":"dell"
     },
     {
-        "urlImg" : "./img/empresas/Esquire.webp",
-        "companyName": "esquire",
-        "alt":"esquire"
+        "url" : "./img/empresas/Esquire.webp",
+        "company": "esquire",
+        "name":"esquire"
     },
     {
-        "urlImg" : "./img/empresas/Fore.webp",
-        "companyName": "fore",
-        "alt":"fore"
+        "url" : "./img/empresas/Fore.webp",
+        "company": "fore",
+        "name":"fore"
     },
     {
-        "urlImg" : "./img/empresas/Google.webp",
-        "companyName": "google",
-        "alt":"google"
+        "url" : "./img/empresas/Google.webp",
+        "company": "google",
+        "name":"google"
     },
     {
-        "urlImg" : "./img/empresas/Nissan.webp",
-        "companyName": "nissan",
-        "alt":"nissan"
+        "url" : "./img/empresas/Nissan.webp",
+        "company": "nissan",
+        "name":"nissan"
     },
     {
-        "urlImg" : "./img/empresas/Scalpers.webp",
-        "companyName": "scalpers",
-        "alt":"scalpers"
+        "url" : "./img/empresas/Scalpers.webp",
+        "company": "scalpers",
+        "name":"scalpers"
     },
     {
-        "urlImg" : "./img/empresas/Servi.webp",
-        "companyName": "servi",
-        "alt":"servi"
+        "url" : "./img/empresas/Servi.webp",
+        "company": "servi",
+        "name":"servi"
     },
     {
-        "urlImg" : "./img/empresas/TikTok.webp",
-        "companyName": "tiktok",
-        "alt":"tiktok"
+        "url" : "./img/empresas/TikTok.webp",
+        "company": "tiktok",
+        "name":"tiktok"
     }
     
 ]

@@ -3,56 +3,56 @@
         "id": "1",
         "name": "Telefono Audiolibro",
         "description": "Descripción 1",
-        "url" : "./video/videoMobile.mov",
-        "isVideo" : true
+        "url" : "./img/telefonoaudiolibro/telf01.webp",
+        "isVideo" : false
     } ,
     {
         "id": "2",
         "name": "Telefono Audiolibro",
         "description": "Descripción 2",
-        "url" : "./video/videoMobile.mov",
-        "isVideo" : true
+        "url" : "./img/telefonoaudiolibro/telf02.webp",
+        "isVideo" : false
     } ,
     {
         "id": "3",
         "name": "Telefono Audiolibro",
         "description": "Descripción 3",
-        "url" : "./video/videoMobile.mov",
-        "isVideo" : true
+        "url" : "./img/telefonoaudiolibro/telf03.webp",
+        "isVideo" : false
     } ,
     {
         "id": "4",
         "name": "Telefono Audiolibro",
         "description": "Descripción 4",
-        "url" : "./video/videoMobile.mov",
-        "isVideo" : true
+        "url" : "./img/telefonoaudiolibro/telf04.webp",
+        "isVideo" : false
     },
     {
         "id": "5",
         "name": "Telefono Audiolibro",
         "description": "Descripción 5",
-        "url" : "./video/videoMobile.mov",
-        "isVideo" : true
+        "url" : "./img/telefonoaudiolibro/telf05.webp",
+        "isVideo" : false
     } ,
     {
         "id": "6",
         "name": "Telefono Audiolibro",
         "description": "Descripción 6",
-        "url" : "./video/videoMobile.mov",
-        "isVideo" : true
+        "url" : "./img/telefonoaudiolibro/telf06.webp",
+        "isVideo" : false
     },
     {
         "id": "7",
         "name": "Telefono Audiolibro",
         "description": "Descripción 7",
-        "url" : "./video/videoMobile.mov",
-        "isVideo" : true
+        "url" : "./img/telefonoaudiolibro/telf07.webp",
+        "isVideo" : false
     } ,
     {
         "id": "8",
         "name": "Telefono Audiolibro",
         "description": "Descripción 8",
-        "url" : "./video/videoMobile.mov",
-        "isVideo" : true
+        "url" : "./img/telefonoaudiolibro/telf08.webp",
+        "isVideo" : false
     }
 ]
