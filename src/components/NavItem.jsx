@@ -14,9 +14,9 @@ export const NavItem = ({ href, label, page }) => {
 
     if (page === 'home') {
       navigate('/')
-    } else if (page === 'otrosProductos') {
-      if (window.location.pathname !== '/otros-productos') {
-        navigate('/otros-productos')
+    } else if (page === 'paginaReservas') {
+      if (window.location.pathname !== '/comprobar-disponibilidad') {
+        navigate('/comprobar-disponibilidad')
       }
     }
 
