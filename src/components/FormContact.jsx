@@ -32,53 +32,34 @@ return (
             name='Nombre Cliente' 
             placeholder='N O M B R E    *' />
         </label>
-        {/* <label>
-            <input 
-            required 
-            onInput={handleInput} 
-            onInvalid={handleInvalid} 
-            type="email" 
-            name='Correo Cliente' 
-            placeholder='C O R R E O    E L E C T R O N I C O    *' />
-        </label> */}
         <label>
             <input 
             required 
             onInput={handleInput} 
             onInvalid={handleInvalid} 
-            type="tel" 
+            type="text" 
+            name='DNI' 
+            placeholder='D N I    *' />
+        </label>
+        <label>
+            <input 
+            required 
+            onInput={handleInput} 
+            onInvalid={handleInvalid} 
+            type="text" 
+            name='Direccion Envio' 
+            placeholder='D I R E C C I O N    E N V I O    *' />
+        </label>
+        <label>
+            <input 
+            required 
+            onInput={handleInput} 
+            onInvalid={handleInvalid} 
+            type="text" 
             name='Numero Cliente' 
-            placeholder='N U M E R O    T E L E F O N O    *' />
+            placeholder='D I R E C C I O N    R E C O G I D A    *' />
         </label>
-        <label>
-            T&nbsp;I&nbsp;P&nbsp;O&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;V&nbsp;E&nbsp;N&nbsp;T&nbsp;O&nbsp;&nbsp;:
-            <select 
-            name="Tipo de Evento" 
-            value={tipoEvento} 
-            onChange={handleChange}>
-                <option value="boda"> Boda </option>
-                <option value="cumpleaños"> Cumpleaños </option>
-                <option value="eventoCorporativo"> Evento Corporativo </option>
-                <option value="fiestaPrivada"> Fiesta Privada </option>
-                <option value="otros"> Otros </option>
-            </select>
-        </label>
-        <label>
-            P&nbsp;R&nbsp;O&nbsp;D&nbsp;U&nbsp;C&nbsp;T&nbsp;O&nbsp;&nbsp;:
-            <select 
-            name="Producto Seleccionado" 
-            value={producto} 
-            onChange={handleChangeProducto}>
-                <option value="plataforma360"> Plataforma360 </option>
-                <option value="magicMirrorLed"> Magic Mirror LED </option>
-                <option value="magicMirrorWhite"> Magic Mirror White </option>
-                <option value="telefonoAudiolibro"> Telefono Audiolibro </option>
-                <option value="letrasLove"> Letras Love </option>
-                <option value="neones"> Neones </option>
-                <option value="kitAntiResaca"> Kit Antiresaca </option>
-            </select>
-        </label>
-        {/* <label htmlFor='fechaEvento'>
+        <label htmlFor='fechaEvento'>
             F&nbsp;E&nbsp;C&nbsp;H&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;V&nbsp;E&nbsp;N&nbsp;T&nbsp;O&nbsp;&nbsp;:
             <input 
             required 
@@ -88,15 +69,6 @@ return (
             name='Fecha Evento'  
             id='fechaEvento'/>
         </label>
-        <label>
-            <input 
-            required 
-            onInput={handleInput} 
-            onInvalid={handleInvalid} 
-            type="text" 
-            name='Lugar Evento' 
-            placeholder='L U G A R   E V E N T O    *' />
-        </label> */}
         <div className='checkBoxContainer'>
             <label htmlFor='miCheckbox'>
                 <input 
@@ -110,7 +82,11 @@ return (
                 He leído y acepto la <NewPage href="/politica-privacidad" label="Politica de Privacidad" />
             </label>
         </div>
-        <button id='EnviarFormularioVisualShow' aria-label='Se enviará el formulario'  type="submit">Enviar</button>
+        <h3>Recuerda, este link caduca en 24 horas, una vez finalizado, la fecha volverá a estar dispnible para otra pareja</h3>
+        <p>Poner que el botón aparte de enviar el formulario nos lleve al link de stripe con el producto</p>
+        <button id='EnviarFormularioTelefonoAudiolibro' aria-label='Se enviará el formulario'  type="submit">Enviar</button>
+        <p>*Una vez recibida la reserva, os enviaré el contrato en 24h por WhatsApp</p>
+        <p>Programar una cuenta atrás que cada vez que entren salga la cuenta atrás restando los minutos (necsitare las cookies para esto) </p>
     </form>
 )
 }
