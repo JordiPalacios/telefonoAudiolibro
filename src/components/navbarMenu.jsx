@@ -11,40 +11,6 @@ export const NavbarMenu = () => {
     const { navbarRef, headerRef} = useContext(NavbarContext)
     const workingMode = useWorkingMode()
 
-    // *******************************************************************
-    // No se si lo vamos a usar en este proyecto, lo comento de momento
-    // const handleMouseEnter = (menu) => {
-    //     if (window.innerWidth >= 748) {
-    //         switch (menu) {
-    //             case 'products' :
-    //                 setIsMoreProductsInfo(true)
-    //                 break
-    //             case 'weddings' :
-    //                 setIsMoreWeddingsInfo(true)
-    //                 break
-    //             default :
-    //                 break
-    //         }
-    //     }
-    // }
-
-    // const handleMouseLeave = (menu) => {
-    //     if (window.innerWidth >= 748) {
-    //         switch (menu) {
-    //             case 'products' :
-    //                 setIsMoreProductsInfo(false)
-    //                 break
-    //             case 'weddings' :
-    //                 setIsMoreWeddingsInfo(false)
-    //                 break
-    //             default :
-    //                 break
-    //         }
-    //     }
-    // }
-    // *******************************************************************
-
-
     const handleWindowSizeChange = () => {
         if (window.innerWidth < 748) {
             setIsMenuToggled(false)
@@ -95,53 +61,13 @@ return (
                     className={isMenuToggled ? 'crossMenu' : 'hamburgerMenu'}
                     onClick={() => toggleClass('menuOpen')}>
                     </button>
-                    {/* <h1><NewPage href='/' label='@Telefonoaudiolibro.es' /></h1> */}
-                    <img src="public\img\Extra\logo.webp" alt="logo @telefonoaudiolibro.es" width="50%" height="auto"/>
+                    <NewPage href='/' url='public/img/extra/logo.webp' label='logoTelefonoAudiolibro'/>
                 </div>
                 <div className={isMenuToggled ? 'menuOpened' : 'menuResponsive'}>
                     <ul>
                         <li>
                             <b><NewPage href='/' label='Inicio' /></b>
                         </li>
-                        {/* *******************************************************************
-                        No se si lo vamos a usar en este proyecto, lo comento de momento */}
-
-                        {/* <div className='tabletPCMenu'>  
-                            <div onMouseLeave={() => handleMouseLeave('products')}>
-                                <b>                                    
-                                <li 
-                                onMouseEnter={() => handleMouseEnter('products')}                            
-                                onClick={() => toggleClass('products')}>
-                                    Servicios Party {isMoreProductsInfo ? <div className="triangulo-arriba"></div> : <div className="triangulo-abajo"></div>}
-                                </li>
-                                </b>
-                                <div className={isMoreProductsInfo ? 'productosOpen' : 'productosClose'}>
-                                    <NavItem href='#plataforma360' label='Plataforma 360'page='home' />
-                                    <NavItem href='#magic-mirror' label='Magic Mirror LED' page='home' />
-                                    <NavItem href='#white-magic-mirror' label='Magic Mirror White'page='home' />
-                                    <NavItem href='#telefono-audiolibro' label='Teléfono Audiolibro' page='otrosProductos' />                                
-                                </div>
-                            </div>                          
-                        </div>
-
-                        <div className='tabletPCMenu'>  
-                            <div onMouseLeave={() => handleMouseLeave('weddings')} >
-                                <b>
-                                <li 
-                                onMouseEnter={() => handleMouseEnter('weddings')}                            
-                                onClick={() => toggleClass('weddings')}
-                                >
-                                    Extras Para Tu Boda { isMoreWeddingsInfo ? <div className="triangulo-arriba"></div> : <div className="triangulo-abajo"></div> }
-                                </li>
-                                </b>
-                                <div className={isMoreWeddingsInfo ? "bodasEventosOpen" : 'bodasEventosClose'}>
-                                    <NavItem href='#letras-love' label='Letras Love' page='otrosProductos' />
-                                    <NavItem href='#neones' label='Neones' page='otrosProductos' />
-                                    <NavItem href='#kitAntiResaca' label='Kit AntiResaca' page='otrosProductos' />
-                                </div>
-                            </div>                          
-                        </div> */}
-                        {/* ******************************************************************* */}
                         <li>
                             <b>
                                 <a 

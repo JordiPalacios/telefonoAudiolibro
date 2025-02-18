@@ -24,9 +24,7 @@ return (
                 en su boda se arrepienten. 
             </p>
         </div>
-        <div>
-            <img src="public/img/telefonoaudiolibro/telf01.webp" alt="telefonoaudiolibro"/>           
-        </div>
+        <img className='w-xs h-auto' src="public/img/telefonoaudiolibro/telf01.webp" alt="telefonoaudiolibro"/>           
     </header>
 )
 }
