@@ -1,5 +1,5 @@
 import { MetaTags, WhatsAppMessage } from '../components'
-import { LazyFrases, LazySection2, LazySection3, LazySection4, LazySection5, LazySection6, LazySection7, Presentation, Section1 } from '../sections/homePage';
+import { HeaderHome, LazyFrases, LazySection2, LazySection3, LazySection4, LazySection5, LazySection6, LazySection7, Section1 } from '../sections/homePage';
 import { LazyFooter } from '../sections/Shared';
 
 
@@ -21,7 +21,7 @@ export const HomeWebsite = () => {
         OgImgType={'image/webp'}
         ogImgAlt={'Plataforma360 Barcelona'}
       />
-      <Presentation />
+      <HeaderHome />
       <main>
         <LazyFrases />         
         <Section1 />          

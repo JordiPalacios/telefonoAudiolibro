@@ -1,10 +1,10 @@
 import { NavbarMenu, NavItem } from '../../components'
 
 
-export const Presentation = () => {
+export const HeaderHome = () => {
 
 return (
-    <header className=' flex flex-row'>
+    <header>
         <NavbarMenu />
         <div className="presentationContainer">              
             <h1>ESCUCHA Y GUARDA PARA
