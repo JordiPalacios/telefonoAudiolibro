@@ -66,8 +66,8 @@ nav button{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 15%;
-    padding: 20px;
+    gap: 25%;
+    padding: 20px 10px;
 }
 
 .logoMenu h1 {
