@@ -57,3 +57,43 @@
         width: 150px;
     }
 }
+
+/* ******************************************
+*** Company Infinite Loop ***
+****************************************** */
+.logoCompanies {
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logoCompanies .logoSlide {
+    display: inline-block;
+    animation: 40s slide infinite linear;
+}
+
+.logoCompanies .logoSlide img {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+    filter: drop-shadow(0px 0px 5px var(--secondary));
+}
+
+.logoCompanies img{
+    border-radius: 5px;
+}
+
+/* Medidad Tablet */
+@media ( 760px <= width ) {
+    .companiesContainer h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medidas PC  */
+@media ( 1024px <= width ) {
+    .companiesContainer h2 {
+        font-size: 2.75rem;
+    }
+}

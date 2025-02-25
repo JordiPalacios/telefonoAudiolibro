@@ -1,37 +1,37 @@
 [
     {
-        "url" : "./img/Extra/FrasesLoop/testFrase.png",
-        "company": "test",
-        "name": "test"
+        "key": "test",
+        "url" : "public/img/Extra/FrasesLoop/testFrase.png",
+        "phrase": "test"
     } ,
     {
-        "url" : "./img/Extra/FrasesLoop/testFrase.png",
-        "company": "test",
-        "name": "test"
+        "key": "test2",
+        "url" : "public/img/Extra/FrasesLoop/testFrase.png",
+        "phrase": "test2"
     } ,
     {
-        "url" : "./img/Extra/FrasesLoop/testFrase.png",
-        "company": "test",
-        "name": "test"
+        "key": "test3",
+        "url" : "public/img/Extra/FrasesLoop/testFrase.png",
+        "phrase": "test3"
     } ,
     {
-        "url" : "./img/Extra/FrasesLoop/testFrase.png",
-        "company": "test",
-        "name": "test"
+        "key": "test4",
+        "url" : "public/img/Extra/FrasesLoop/testFrase.png",
+        "phrase": "test4"
     } ,
     {
-        "url" : "./img/Extra/FrasesLoop/testFrase.png",
-        "company": "test",
-        "name": "test"
+        "key": "test5",
+        "url" : "public/img/Extra/FrasesLoop/testFrase.png",
+        "phrase": "test5"
     } ,
     {
-        "url" : "./img/Extra/FrasesLoop/testFrase.png",
-        "company": "test",
-        "name": "test"
+        "key": "test6",
+        "url" : "public/img/Extra/FrasesLoop/testFrase.png",
+        "phrase": "test6"
     } ,
     {
-        "url" : "./img/Extra/FrasesLoop/testFrase.png",
-        "company": "test",
-        "name": "test"
+        "key": "test7",
+        "url" : "public/img/Extra/FrasesLoop/testFrase.png",
+        "phrase": "test7"
     }    
 ]

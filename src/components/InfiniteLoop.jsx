@@ -1,16 +1,16 @@
-import CompaniesData from '../assets/mocks/companiesData.json'
+import FrasesData from '../assets/mocks/frasesData.json'
 import PropTypes from 'prop-types'
 
 export const InfiniteLoop = ({ urlImg, nameImg, equal }) => {
-    const companyData = CompaniesData
+    const frasesData = FrasesData
     const numImages = Array(32).fill(null)
 
     let content = equal 
         ? numImages.map((_, index) => (
             <img key={index} src={urlImg} alt={nameImg} />
         ))
-        : companyData.map((data, index) => (
-            <img key={index} src={data.urlImg} alt={data.companyName} />
+        : frasesData.map((data, index) => (
+            <img key={index} src={data.url} alt={data.phrase} />
         )) 
     
 return (

@@ -1,31 +1,37 @@
 import { useContext, useEffect, useRef } from 'react'
-import FrasesData from '../../assets/mocks/frasesData.json'
+// import FrasesData from '../../assets/mocks/frasesData.json'
 import { InfiniteLoop } from '../../components'
 import { LoadContext } from '../../context/LoadContext'
 
 const FrasesBodas = () => {
-    const frasesData = FrasesData
+    // const frasesData = FrasesData
 return (
     <section>
-        <div className="companiesContainer">
-            <h2>Aquí van saliendo frases pero no me funciona</h2>
-            <hr className="line"></hr>
-            <div className="logoCompanies">  
-                {frasesData.map((data) => (
-                    <InfiniteLoop 
-                        key={data.company} 
-                        urlImg={data.url} 
-                        nameImg={data.name} 
-                        equal={false}/>
-                    ))}
-                {frasesData.map((data) => (
-                    <InfiniteLoop 
-                        key={data.company} 
-                        urlImg={data.url}
-                        nameImg={data.name} 
-                        equal={false}/>
-                    ))}
-            </div>
+        <div className="logo">  
+            {/* {frasesData.map((data) => (
+                <InfiniteLoop 
+                    key={data.key} 
+                    urlImg={data.url} 
+                    nameImg={data.phrase} 
+                    equal={false}/>
+                ))}
+            {frasesData.map((data) => (
+                <InfiniteLoop 
+                    key={data.key} 
+                    urlImg={data.url}
+                    nameImg={data.phrase} 
+                    equal={false}/>
+                ))} */}
+            <InfiniteLoop 
+            urlImg='public/img/empresas/Acciona.webp'
+            nameImg='Acciona'
+            equal = {true}
+            />
+            <InfiniteLoop 
+            urlImg='public/img/empresas/Acciona.webp'
+            nameImg='Acciona'
+            equal = {true}
+            />
         </div>
     </section>
 )
@@ -45,7 +51,7 @@ export const LazyFrases = () => {
         }
 
         const observer = new IntersectionObserver(onChange, {
-            rootMargin: '400px'
+            rootMargin: '10px'
         })
 
         observer.observe(elementRef.current)

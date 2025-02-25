@@ -23,14 +23,14 @@ export const HomeWebsite = () => {
       />
       <HeaderHome />
       <main>
-        {/* <LazyFrases />         
-        <Section1 />          
-        <LazySection2 />
-        <LazySection3 /> 
-        <LazySection4 /> 
-        <LazySection5 /> 
-        <LazySection6 /> 
-        <LazySection7 />  */}
+        <LazyFrases />         
+        {/* <Section1 />           */}
+        {/* // <LazySection2 /> */}
+        {/* // <LazySection3 />  */}
+        {/* // <LazySection4 />  */}
+        {/* // <LazySection5 />  */}
+        {/* // <LazySection6 />  */}
+        {/* // <LazySection7 /> */}
         <WhatsAppMessage className="contactFixed" msg="https://wa.me/34653781239?text=¡Quiero%20más%20información%20sobre%20VisualShow!" />
       </main>
       <LazyFooter />
