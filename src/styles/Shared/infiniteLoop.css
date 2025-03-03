@@ -2,13 +2,13 @@
     from{
         transform: translateX(0);
     } to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
 .logo {
     overflow: hidden;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
     background: var(--textWhite);
     white-space: nowrap;
     position: relative;
@@ -25,12 +25,12 @@
     z-index: 2;
 }
 
-.logoSlide {
+.mediaEqual{
     display: inline-block;
-    animation: 150s slide infinite linear;
+    animation: slide 150s linear infinite;
 }
 
-.logoSlide img {
+.mediaEqual img {
     width: 100px;
     height: auto;
     margin: 0 10px;
@@ -38,62 +38,22 @@
 
 /* Medidad Tablet */
 @media ( 760px <= width ) {
-    .logoSlide img {
+    .mediaEqual img {
         width: 125px;
     }
 
-    .logoSlide {
-        animation: 120s slide infinite linear;
+    .mediaEqual {
+        animation: slide 120s linear infinite;
     }
 }
 
 /* Medidas PC  */
 @media ( 1024px <= width ) {
-    .logoSlide {
-        animation: 90s slide infinite linear;
+    .mediaEqual {
+        animation: slide 90s linear infinite;
     }
 
-    .logoSlide img {
+    .mediaEqual img {
         width: 150px;
-    }
-}
-
-/* ******************************************
-*** Company Infinite Loop ***
-****************************************** */
-.logoCompanies {
-    overflow: hidden;
-    padding: 20px 0;
-    white-space: nowrap;
-    position: relative;
-}
-
-.logoCompanies .logoSlide {
-    display: inline-block;
-    animation: 40s slide infinite linear;
-}
-
-.logoCompanies .logoSlide img {
-    width: 100px;
-    height: auto;
-    margin: 0 10px;
-    filter: drop-shadow(0px 0px 5px var(--secondary));
-}
-
-.logoCompanies img{
-    border-radius: 5px;
-}
-
-/* Medidad Tablet */
-@media ( 760px <= width ) {
-    .companiesContainer h2 {
-        font-size: 2.5rem;
-    }
-}
-
-/* Medidas PC  */
-@media ( 1024px <= width ) {
-    .companiesContainer h2 {
-        font-size: 2.75rem;
     }
 }

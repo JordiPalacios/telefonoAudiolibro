@@ -1,7 +1,7 @@
 import FrasesData from '../assets/mocks/frasesData.json'
 import PropTypes from 'prop-types'
 
-export const InfiniteLoop = ({ urlImg, nameImg, equal }) => {
+export const InfiniteLoop = ({ urlImg, nameImg, equal, className }) => {
     const frasesData = FrasesData
     const numImages = Array(32).fill(null)
 
@@ -14,7 +14,7 @@ export const InfiniteLoop = ({ urlImg, nameImg, equal }) => {
         )) 
     
 return (
-    <div className="logoSlide">
+    <div className={className}>
         {content}
     </div>
 )

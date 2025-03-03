@@ -6,7 +6,7 @@ import { LoadContext } from '../../context/LoadContext'
 const FrasesBodas = () => {
     // const frasesData = FrasesData
 return (
-    <section>
+    <section> 
         <div className="logo">  
             {/* {frasesData.map((data) => (
                 <InfiniteLoop 
@@ -26,11 +26,13 @@ return (
             urlImg='public/img/empresas/Acciona.webp'
             nameImg='Acciona'
             equal = {true}
+            className='mediaEqual'
             />
             <InfiniteLoop 
             urlImg='public/img/empresas/Acciona.webp'
             nameImg='Acciona'
             equal = {true}
+            className='mediaEqual'
             />
         </div>
     </section>
