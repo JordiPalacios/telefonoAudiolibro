@@ -1,4 +1,4 @@
-import { NavbarMenu, NavItem, WhatsAppMessage } from '../../components'
+import { NavbarMenu, WhatsAppMessage } from '../../components'
 
 
 export const HeaderHome = () => {
