@@ -2,13 +2,13 @@
     from{
         transform: translateX(0);
     } to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
 .logo {
     overflow: hidden;
-    padding: 10px 0;
+    padding: 10px 0 10px 0;
     background: var(--textWhite);
     white-space: nowrap;
     position: relative;
@@ -25,9 +25,9 @@
     z-index: 2;
 }
 
-.mediaEqual{
+.mediaEqual {
     display: inline-block;
-    animation: slide 150s linear infinite;
+    animation: 150s slide infinite linear;
 }
 
 .mediaEqual img {
@@ -43,14 +43,14 @@
     }
 
     .mediaEqual {
-        animation: slide 120s linear infinite;
+        animation: 120s slide infinite linear;
     }
 }
 
 /* Medidas PC  */
 @media ( 1024px <= width ) {
     .mediaEqual {
-        animation: slide 90s linear infinite;
+        animation: 90s slide infinite linear;
     }
 
     .mediaEqual img {

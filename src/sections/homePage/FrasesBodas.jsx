@@ -1,36 +1,20 @@
 import { useContext, useEffect, useRef } from 'react'
-// import FrasesData from '../../assets/mocks/frasesData.json'
 import { InfiniteLoop } from '../../components'
 import { LoadContext } from '../../context/LoadContext'
 
 const FrasesBodas = () => {
-    // const frasesData = FrasesData
 return (
     <section> 
         <div className="logo">  
-            {/* {frasesData.map((data) => (
-                <InfiniteLoop 
-                    key={data.key} 
-                    urlImg={data.url} 
-                    nameImg={data.phrase} 
-                    equal={false}/>
-                ))}
-            {frasesData.map((data) => (
-                <InfiniteLoop 
-                    key={data.key} 
-                    urlImg={data.url}
-                    nameImg={data.phrase} 
-                    equal={false}/>
-                ))} */}
             <InfiniteLoop 
-            urlImg='public/img/empresas/Acciona.webp'
-            nameImg='Acciona'
+            urlImg='public/img/Extra/FrasesLoop/testFrase.png'
+            nameImg='FraseMotivadora1'
             equal = {true}
             className='mediaEqual'
             />
             <InfiniteLoop 
-            urlImg='public/img/empresas/Acciona.webp'
-            nameImg='Acciona'
+            urlImg='public/img/Extra/FrasesLoop/testFrase.png'
+            nameImg='FraseMotivadora2'
             equal = {true}
             className='mediaEqual'
             />
