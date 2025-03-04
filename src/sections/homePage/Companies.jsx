@@ -1,30 +1,22 @@
 import { useContext, useEffect, useRef } from 'react'
-import CompaniesData from '../../assets/mocks/companiesData.json'
 import { InfiniteLoop } from '../../components'
 import { LoadContext } from '../../context/LoadContext'
 
 const Companies = () => {
-    const companyData = CompaniesData
 return (
     <section>
-        <div className="companiesContainer">
+        <div>
             <h2>Empresas que han confiado en VisualShow</h2>
             <hr className="line"></hr>
-            <div className="logoCompanies">  
-                {companyData.map((data) => (
-                    <InfiniteLoop 
-                        key={data.companyName} 
-                        urlImg={data.urlImg} 
-                        nameImg={data.companyName} 
-                        equal={false}/>
-                    ))}
-                {companyData.map((data) => (
-                    <InfiniteLoop 
-                        key={data.companyName} 
-                        urlImg={data.urlImg}
-                        nameImg={data.companyName} 
-                        equal={false}/>
-                    ))}
+            <div>  
+                <InfiniteLoop 
+                equal = {false}
+                className='mediaEqual'
+                />
+                <InfiniteLoop 
+                equal = {false}
+                className='mediaEqual'
+                />
             </div>
         </div>
     </section>
