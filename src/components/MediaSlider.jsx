@@ -4,22 +4,34 @@ export const MediaSlider = ({name, url, styleType, isVideo}) => {
     let className
 
     switch (styleType) {
-        case 'example1':
-            className = 'bg-white'
+        case 'mobile':
+            {isVideo ?
+                className = 'w-3/4 rounded-3xl my-4'
+                :
+                className = 'bg-red-400'
+            }
             break;
-        case 'example2':
-            className = 'bg-green-400'
+        case 'tablet':
+            {isVideo ?
+                className = 'w-3/4 rounded-3xl'
+                :
+                className = 'bg-red-400'
+            }
             break;
-        case 'example3':
-            className = 'bg-pink-400'
+        case 'desktop':
+            {isVideo ?
+                className = 'w-3/4 rounded-3xl my-4'
+                :
+                className = 'bg-red-400'
+            }
             break;
     }
     return (
-        <div className={className}>
+        <div className='flex items-center justify-center'>
             {isVideo ?
-                <video src={url} alt={name} className='w-full p-2 rounded-3xl' controls/>
+                <video src={url} alt={name} className={className} controls/>
             :
-                <img src={url} alt={name} className='w-14 p-2 rounded-3xl'/>
+                <img src={url} alt={name} className={className}/>
             }
         </div>
     )

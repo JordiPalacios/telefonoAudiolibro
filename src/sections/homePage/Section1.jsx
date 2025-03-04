@@ -4,10 +4,11 @@ import TelefonoAudiolibroData from "../../assets/mocks/telefonoAudiolibroData.js
 import { MediaSlider } from "../../components";
 import Slider from "react-slick";
 import { useEffect, useState } from "react";
+import { useWorkingMode } from "../../assets/Customhooks/useWorkingMode";
 
 export const Section1 = () => {
-
     const telefonoAudiolibroData = TelefonoAudiolibroData
+    const workingMode = useWorkingMode('mobile')
 
     useEffect(() => {
         const handleResize = () => {
@@ -43,7 +44,7 @@ export const Section1 = () => {
             <MediaSlider
             name={data.name}
             url={data.url}
-            styleType="example3"
+            styleType={workingMode}
             isVideo={data.isVideo}
             />
             ))}

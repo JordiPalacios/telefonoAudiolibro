@@ -84,8 +84,16 @@ button {
 }
 
 /* Propiedades Slider */
+.slick-prev {
+    left: 0px;
+}
+
+.slick-next {
+    right: 0px;
+}
+
 .slick-dots {
-    bottom: -20px;
+    bottom: -5px;
 }
 
 .slick-dots li.slick-active button:before {
@@ -94,7 +102,7 @@ button {
 }
 
 .slick-dots li button:before {
-    color: var(--secondary);
+    color: var(--accent);
 }
 
 /* Whatsapp Logo */

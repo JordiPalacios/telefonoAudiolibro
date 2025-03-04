@@ -24,7 +24,7 @@ export const HomeWebsite = () => {
       <HeaderHome />
       <main>
         <LazyFrases />         
-        {/* <Section1 />           */}
+        <Section1 />          
         {/* // <LazySection2 /> */}
         {/* // <LazySection3 />  */}
         {/* // <LazySection4 />  */}
