@@ -1,4 +1,4 @@
-
+@import "tailwindcss";
 /* Definimos los colores de la web */
 :root {
     font-family: 'Lora Variable', 'Adamina' ,'Roboto', Helvetica, Arial, sans-serif;
@@ -45,4 +45,11 @@
     --tf-900: #83184b;
     --tf-950: #490825;
 
+}
+
+/* Eliminamos los estilos por defecto de los elementos */
+@layer base {
+    button, a , img {
+        all: unset;
+    }
 }
