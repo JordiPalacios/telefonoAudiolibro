@@ -39,16 +39,18 @@ export const Section1 = () => {
 
 
     return (
-        <Slider {...sliderSettings}>
-            {telefonoAudiolibroData.map((data) => (
-            <MediaSlider
-            key = {data.id}
-            name={data.name}
-            url={data.url}
-            styleType={workingMode}
-            isVideo={data.isVideo}
-            />
-            ))}
-        </Slider>
+        <div className="sliderContainer">
+            <Slider {...sliderSettings}>
+                {telefonoAudiolibroData.map((data) => (
+                    <MediaSlider
+                    key = {data.id}
+                    name={data.name}
+                    url={data.url}
+                    styleType={workingMode}
+                    isVideo={data.isVideo}
+                    />
+                ))}
+            </Slider>
+        </div>
     )
 }
