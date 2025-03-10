@@ -42,6 +42,7 @@ export const Section1 = () => {
         <Slider {...sliderSettings}>
             {telefonoAudiolibroData.map((data) => (
             <MediaSlider
+            key = {data.id}
             name={data.name}
             url={data.url}
             styleType={workingMode}

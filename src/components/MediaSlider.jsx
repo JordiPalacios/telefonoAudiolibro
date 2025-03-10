@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MediaSlider = ({name, url, styleType, isVideo}) => {
+export const MediaSlider = ({key, name, url, styleType, isVideo}) => {
     let className
 
     switch (styleType) {
@@ -29,9 +29,9 @@ export const MediaSlider = ({name, url, styleType, isVideo}) => {
     return (
         <div className='flex items-center justify-center'>
             {isVideo ?
-                <video src={url} alt={name} className={className} controls/>
+                <video key={key} src={url} alt={name} className={className} controls/>
             :
-                <img src={url} alt={name} className={className}/>
+                <img key={key} src={url} alt={name} className={className}/>
             }
         </div>
     )
