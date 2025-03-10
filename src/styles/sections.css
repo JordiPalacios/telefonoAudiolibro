@@ -84,12 +84,16 @@ button {
 }
 
 /* Propiedades Slider */
+.slick-dots, .slick-prev, .slick-next {
+    z-index: 99;
+}
+
 .slick-prev {
-    left: 0px;
+    left: 20px;
 }
 
 .slick-next {
-    right: 0px;
+    right: 20px;
 }
 
 .slick-dots {
@@ -151,7 +155,7 @@ button {
     }
 }
 
-img {
+img, video {
     view-timeline-name: --image;
     view-timeline-axis: block;
 
